@@ -1,0 +1,16 @@
+.navbar-container {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    max-width: 1000px;
+    height: 96px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Shadow/Dark/XXL */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07), 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+}

@@ -1,0 +1,117 @@
+/* landing introduction */
+
+.landing-logo-container {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 355.114px;
+    max-height: 329.545px;
+    overflow: hidden;
+    margin-left: 66px;
+    background: #293039;
+  }
+  
+  .landing-logo-container img {
+    width: 100%;
+    min-height: auto;
+    margin-top: -60px;
+    background-repeat: no-repeat;
+  }
+  
+  .landing-introduction-block {
+    display: flex;
+  }
+  
+  .landing-introduction {
+    flex-shrink: 0;
+    z-index: 2;
+    background: #293039;
+    padding-bottom: 10px;
+  }
+  
+  .landing-introduction-text {
+    max-width: 1920px;
+    max-height: 1050px;
+    display: flex;
+    max-width: 40%;
+    margin-left: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  .landing-introduction-text-title-evolve {
+    color: #05B4BA;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    /* 70.4px */
+  }
+
+  .landing-introduction-text-title-description::after {
+    content: "\A"; /* Representa un salto de línea */
+    white-space: pre; /* Asegura que el contenido se muestre con espacios y saltos de línea */
+  }
+  
+  .landing-introduction-text-description {
+    align-self: stretch;
+    color: var(--white, #FFF);
+    /* Body/L */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+  }
+  
+  .landing-introduction-text-title {
+    align-self: stretch;
+    color: var(--white, #FFF);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+  }
+  
+  .landing-introduction-contact-button {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid var(--white, #FFF);
+  }
+  
+  .landing-introduction-contact-button:hover {
+    background: #c7c7c7;
+    border: 2px solid rgba(225, 8, 55, 0.3);
+  }
+  
+  .landing-introduction-contact-button:active {
+    background: #ffffff;
+    border: 2px solid rgba(227, 18, 63, 0.8);
+  }
+  
+  .landing-introduction-image {
+    height: auto;
+    min-width: 55%;
+    overflow: auto;
+    z-index: 1;
+    margin-top: -290px;
+    align-self: flex-start; 
+    mix-blend-mode: lighten;
+    filter: brightness(1.5);
+  }
+  
+  .buttons {
+    display: flex;
+    grid-gap: 10px;
+    cursor: pointer;
+  }
+
+  .buttons button {
+    color: white;
+  }
+  
+  /* END landing introduction */

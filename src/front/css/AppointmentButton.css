@@ -1,0 +1,21 @@
+.landing-introduction-booking-button {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #05B4BA;
+    background: #05B4BA;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .landing-introduction-booking-button:hover {
+    background: #06e3eb;
+    border: 2px solid rgba(225, 8, 55, 0.3);
+  }
+  
+  .landing-introduction-booking-button:active {
+    background: #06f7ff;
+    border: 2px solid rgba(227, 18, 63, 0.8);
+  }
