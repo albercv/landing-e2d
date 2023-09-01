@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import EN from '../../assets/images/eeuu.png'
 import ES from '../../assets/images/spain.png'
 import '../../css/visualcomponents/LanguageDropdown.css'
