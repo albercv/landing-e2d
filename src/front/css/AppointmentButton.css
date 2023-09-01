@@ -7,6 +7,7 @@
     border: 2px solid #05B4BA;
     background: #05B4BA;
     transition: background-color 0.3s ease;
+    color: white;
   }
   
   .landing-introduction-booking-button:hover {
