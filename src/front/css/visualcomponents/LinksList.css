@@ -1,0 +1,15 @@
+.navbar-ul-section {
+    
+}
+
+.navbar-ul-section ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    grid-gap: 10px;
+    white-space: nowrap;
+}
+
+.navbar-ul-section ul li {
+    color: white;
+}
