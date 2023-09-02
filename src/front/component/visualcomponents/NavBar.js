@@ -18,7 +18,7 @@ export const NavBar = () => {
         </div>
         <div className='navbar-buttons-section'>
             <LanguageDropdown />
-            <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")}/>
+            <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")} buttonType="CALENDLY"/>
         </div>
     </div>
   )

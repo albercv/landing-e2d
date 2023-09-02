@@ -92,7 +92,7 @@
 
   .buttons button {
     color: white;
-    cursor: url('../assets/images/icons8-contact-64.png'), auto;
+    cursor: pointer;
   }
   
   /* END landing introduction */

@@ -24,8 +24,8 @@ export const Introduction = () => {
                     {t("introduction.introText")}
                     </p>
                     <div className='buttons'>
-                        <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")}/>
-                        <ContactButton buttonClass='landing-introduction-contact-button' buttonText={t("buttons.contact")} />
+                        <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")} buttonType="CALENDLY"/>
+                        <ContactButton buttonClass='landing-introduction-contact-button' buttonText={t("buttons.contact")} buttonType='NO_CALENDLY' />
                     </div>
                 </div>
                 <div className='landing-introduction-image'>

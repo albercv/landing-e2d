@@ -13,7 +13,7 @@
   .landing-introduction-booking-button:hover {
     background: #06e3eb;
     border: 2px solid rgba(225, 8, 55, 0.3);
-    cursor: url('../../assets/images/icons8-google-calendar-64.png'), auto;
+    cursor: pointer;
   }
   
   .landing-introduction-booking-button:active {
