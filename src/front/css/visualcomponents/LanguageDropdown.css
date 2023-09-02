@@ -2,3 +2,14 @@
     max-width: 2%;
     height: auto;
 }
+
+.dropdown-select {
+    cursor: pointer;
+    margin-right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    min-width: 30px;
+}

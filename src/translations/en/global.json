@@ -1,0 +1,15 @@
+{
+    "introduction": {
+        "unlock": "Unlock",
+        "claimText": "Your Business's Future.",
+        "introText": "Welcome to Evolve2Digital, a dynamic and forward-thinking tech company based in Wyoming with a relocated Spanish team. We specialize in leveraging the power of technology to drive business growth and success. Our team of experts offers cutting-edge web development and product strategy services tailored to transform your company. Experience the confidence and trust that comes with partnering with Evolve2Digital as we help you unlock your business's full potential."
+    },
+    "navbar":{
+        "aboutus" : "About us",
+        "services" : "Solutions",
+        "contact" : "Contact",
+        "team" : "Team",
+        "dropdown_spanish": "Spanish",
+        "dropdown_english": "English"
+    }
+}
