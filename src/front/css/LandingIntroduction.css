@@ -74,25 +74,6 @@
     line-height: 110%;
   }
   
-  .landing-introduction-contact-button {
-    display: flex;
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 2px solid var(--white, #FFF);
-  }
-  
-  .landing-introduction-contact-button:hover {
-    background: #c7c7c7;
-    border: 2px solid rgba(225, 8, 55, 0.3);
-  }
-  
-  .landing-introduction-contact-button:active {
-    background: #ffffff;
-    border: 2px solid rgba(227, 18, 63, 0.8);
-  }
-  
   .landing-introduction-image {
     height: auto;
     min-width: 55%;

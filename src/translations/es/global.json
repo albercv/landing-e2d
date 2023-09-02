@@ -3,13 +3,17 @@
         "unlock": "Libera",
         "claimText": "el éxito de tu negocio",
         "introText": "Bienvenido a Evolve2Digital, una empresa tecnológica dinámica y visionaria con sede en Wyoming y un equipo español trasladado. Nos especializamos en aprovechar el poder de la tecnología para impulsar el crecimiento y el éxito empresarial. Nuestro equipo de expertos ofrece servicios punteros en desarrollo web y estrategia de productos diseñados para transformar tu empresa. Experimenta la confianza y la seguridad que brinda asociarse con Evolve2Digital mientras te ayudamos a liberar todo el potencial de tu negocio."
-    }, 
-    "navbar":{
-        "aboutus" : "Sobre nosotros",
-        "services" : "Servicios",
-        "contact" : "Contacto",
-        "team" : "Equipo",
+    },
+    "navbar": {
+        "aboutus": "Sobre nosotros",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "team": "Equipo",
         "dropdown_spanish": "Español",
         "dropdown_english": "Inglés"
+    },
+    "buttons": {
+        "appointment": "Reserva tu cita ahora",
+        "contact": "Contáctanos"
     }
 }

@@ -11,5 +11,9 @@
         "team" : "Team",
         "dropdown_spanish": "Spanish",
         "dropdown_english": "English"
+    },
+    "buttons":{
+        "appointment" : "Book an appoinment now",
+        "contact" : "Contact us"
     }
 }

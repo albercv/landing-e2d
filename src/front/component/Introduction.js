@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/images/logo.png'
 import '../css/LandingIntroduction.css'
 import headerImage from '../assets/images/header_landing.png'
-import { AppointmentButton } from './visualcomponents/AppointmentButton.js'
+import { ContactButton } from './visualcomponents/ContactButton.js'
 import { useTranslation } from 'react-i18next'
 
 export const Introduction = () => {
@@ -24,8 +24,8 @@ export const Introduction = () => {
                     {t("introduction.introText")}
                     </p>
                     <div className='buttons'>
-                        <AppointmentButton />
-                        <button className='landing-introduction-contact-button'>Contact us</button>
+                        <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")}/>
+                        <ContactButton buttonClass='landing-introduction-contact-button' buttonText={t("buttons.contact")} />
                     </div>
                 </div>
                 <div className='landing-introduction-image'>

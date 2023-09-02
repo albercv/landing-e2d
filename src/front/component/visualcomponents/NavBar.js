@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/NavBar.css'
 import { NavBarLinksList } from './NavBarLinksList'
-import { AppointmentButton } from './AppointmentButton'
+import { ContactButton } from './ContactButton'
 import { LanguageDropdown } from './LanguageDropdown'
 import { useTranslation } from 'react-i18next'
 
@@ -18,7 +18,7 @@ export const NavBar = () => {
         </div>
         <div className='navbar-buttons-section'>
             <LanguageDropdown />
-            <AppointmentButton />
+            <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")}/>
         </div>
     </div>
   )
