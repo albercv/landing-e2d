@@ -39,3 +39,7 @@
     background: #ffffff;
     border: 2px solid rgba(227, 18, 63, 0.8);
   }
+
+  .hide-button{
+    visibility: hidden;
+  }

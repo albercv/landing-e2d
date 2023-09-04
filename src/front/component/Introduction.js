@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 export const Introduction = () => {
 
-    const {t} = useTranslation("global");
+    const { t } = useTranslation("global");
 
     return (
         <div className='landing-introduction'>
@@ -21,11 +21,11 @@ export const Introduction = () => {
                         <span className='landing-introduction-text-title-description'>{t("introduction.unlock")}</span> {t("introduction.claimText")}
                     </p>
                     <p className='landing-introduction-text-description'>
-                    {t("introduction.introText")}
+                        {t("introduction.introText")}
                     </p>
                     <div className='buttons'>
-                        <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")} buttonType="CALENDLY"/>
-                        <ContactButton buttonClass='landing-introduction-contact-button' buttonText={t("buttons.contact")} buttonType='NO_CALENDLY' />
+                        <ContactButton buttonClass='landing-introduction-booking-button' buttonText={t("buttons.appointment")} buttonType="CALENDLY" showButton={true} />
+                        <ContactButton buttonClass='landing-introduction-contact-button' buttonText={t("buttons.contact")} buttonType='NO_CALENDLY' showButton={true} />
                     </div>
                 </div>
                 <div className='landing-introduction-image'>
