@@ -6,7 +6,8 @@ import { Hamburger } from './visualcomponents/Hamburger';
 
 export const Landing = () => {
 
-    const [smallWindowSize, setSmallWindowSize] = useState({ width: 896 });
+    const [smallWindowSize, setSmallWindowSize] = useState( window.innerWidth );
+    console.log(smallWindowSize)
 
     const renderViewSize = {
         "NavBar": NavBar,
@@ -17,7 +18,7 @@ export const Landing = () => {
         setSmallWindowSize({ width: document.documentElement.clientWidth });
     };
 
-    const CurrentView = smallWindowSize.width >= 896 ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
+    const CurrentView = smallWindowSize.width > 428 ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
 
     useEffect(() => {
         window.addEventListener('resize', displayWindowSize);
@@ -26,8 +27,6 @@ export const Landing = () => {
             window.removeEventListener('resize', displayWindowSize);
         };
     }, []);
-
-
 
     return (
         <>

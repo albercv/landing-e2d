@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../css/visualcomponents/Hamburger.css'
 
 export const Hamburger = () => {
     return (<>

@@ -100,7 +100,7 @@
 /* END landing introduction */
 
 /* MEDIQUERIES MOBILE */
-@media (max-width: 896px) {
+@media (max-width: 428px) {
   .landing-introduction {
     display: flex;
     flex-direction: column;
