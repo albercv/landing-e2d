@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../css/visualcomponents/Hamburger.css'
+import { LanguageDropdown } from './LanguageDropdown'
 
 export const Hamburger = () => {
     return (<>
@@ -14,11 +15,12 @@ export const Hamburger = () => {
       <aside className="sidebar">
         
         <nav className="sidebar__menu">
-          <a href="">Home</a>
+          <a href="#">Home</a>
           <a href="">About us</a>
           <a href="">Services</a>
           <a href="">Products</a>
           <a href="">Contact</a>
+          <LanguageDropdown />
         </nav>
         
         <label htmlFor="menu-control" className="sidebar__close"></label>

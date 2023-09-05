@@ -30,13 +30,14 @@
 
 .landing-introduction-text {
   max-width: 1920px;
-  max-height: 1050px;
+  max-height: auto;
   display: flex;
   max-width: 40%;
   margin-left: 5%;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  text-align: justify;
 }
 
 .landing-introduction-text-title-evolve {
@@ -51,9 +52,7 @@
 
 .landing-introduction-text-title-description::after {
   content: "\A";
-  /* Representa un salto de línea */
   white-space: pre;
-  /* Asegura que el contenido se muestre con espacios y saltos de línea */
 }
 
 .landing-introduction-text-description {
@@ -100,14 +99,28 @@
 /* END landing introduction */
 
 /* MEDIQUERIES MOBILE */
-@media (max-width: 428px) {
+@media (max-width: 856px) {
+
   .landing-introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: url(../assets/images/header_landing.png) no-repeat;
     background-size: cover;
+    background-position: 50%;
     z-index: -1;
+  }
+
+  .landing-introduction::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, #293039 25%, rgba(41, 48, 57, 0.00) 100%);
+    pointer-events: none;
   }
 
   .landing-logo-container {
@@ -120,15 +133,48 @@
     padding-top: 50px;
     background: #293039;
     border-radius: 100%;
-}
+    z-index: 2;
+
+  }
+
+  .landing-introduction-block {
+    z-index: 2;
+  }
+
+  .landing-introduction-block .landing-introduction-text-title-evolve {
+    align-items: center;
+  }
+
+  .landing-introduction-text-title-evolve {
+    font-size: 45px;
+  }
+
+  .landing-introduction-text-title-description {
+    font-size: 45px;
+  }
 
   .landing-introduction-text {
+    width: 100% !important;
+    height: auto;
+    max-width: 100%;
+    margin-left: 20%;
+  }
+
+  .landing-introduction-text-description {
+    -webkit-text-stroke: 0.25px black;
     width: 100%;
+    font-weight: 600;
+  }
+
+  .landing-introduction-text-title-description::after {
+    content: "";
+    white-space: pre;
   }
 
   .landing-introduction-image img {
     display: none;
   }
+
 }
 
 /* Hasta 1024px (por ejemplo, dispositivos móviles en orientación horizontal) */

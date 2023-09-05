@@ -19,6 +19,7 @@ export const Introduction = () => {
                     <p className='landing-introduction-text-title'>
                         <span className='landing-introduction-text-title-evolve'>Evolve2Digital </span>
                         <span className='landing-introduction-text-title-description'>{t("introduction.unlock")}</span> {t("introduction.claimText")}
+                        <span className='landing-introduction-text-title-future'>{t("introduction.future")}</span>
                     </p>
                     <p className='landing-introduction-text-description'>
                         {t("introduction.introText")}

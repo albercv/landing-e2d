@@ -13,3 +13,20 @@
     padding: 5px;
     min-width: 30px;
 }
+
+/* MEDIQUERIES MOBILE */
+@media (max-width: 856px) {
+    .dropdown-container {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .dropdown-flag {
+        max-width: 25%;
+    }
+}
+
+/* END MEDIQUERIES MOBILE */

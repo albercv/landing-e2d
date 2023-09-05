@@ -18,7 +18,7 @@ export const Landing = () => {
         setSmallWindowSize({ width: document.documentElement.clientWidth });
     };
 
-    const CurrentView = smallWindowSize.width > 428 ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
+    const CurrentView = smallWindowSize.width > 856 ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
 
     useEffect(() => {
         window.addEventListener('resize', displayWindowSize);

@@ -17,7 +17,7 @@ export const LanguageDropdown = () => {
     };
 
     return (
-        <>
+        <div className='dropdown-container'>
             <img src={selectedOption === 'EN' ? EN : ES} className='dropdown-flag navbar-buttons-section' alt="flag" />    
             <div>
                 <select className='dropdown-select' id="language" value={selectedOption} onChange={(event) => handleOptionChange(event)}>
@@ -25,6 +25,6 @@ export const LanguageDropdown = () => {
                     <option value="ES">{t("navbar.dropdown_spanish")}</option>
                 </select>
             </div>
-        </>
+        </div>
     )
 }
