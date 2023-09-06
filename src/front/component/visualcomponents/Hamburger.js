@@ -1,3 +1,9 @@
+/* 
+In media queries 856px is the width when the screen does not look properly 
+whereas 428px is closer to the actual mobile width
+*/
+
+
 import React from 'react'
 import '../../css/visualcomponents/Hamburger.css'
 import { LanguageDropdown } from './LanguageDropdown'

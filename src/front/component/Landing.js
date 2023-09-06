@@ -6,8 +6,8 @@ import { Hamburger } from './visualcomponents/Hamburger';
 
 export const Landing = () => {
 
-    const [smallWindowSize, setSmallWindowSize] = useState( window.innerWidth );
-    console.log(smallWindowSize)
+    const desktopScreenMinimumSize = 856;
+    const [smallWindowSize, setSmallWindowSize] = useState({ width: window.innerWidth });
 
     const renderViewSize = {
         "NavBar": NavBar,
@@ -18,7 +18,7 @@ export const Landing = () => {
         setSmallWindowSize({ width: document.documentElement.clientWidth });
     };
 
-    const CurrentView = smallWindowSize.width > 856 ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
+    const CurrentView = smallWindowSize.width > desktopScreenMinimumSize ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
 
     useEffect(() => {
         window.addEventListener('resize', displayWindowSize);

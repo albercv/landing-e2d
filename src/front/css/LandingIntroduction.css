@@ -1,3 +1,8 @@
+/* 
+In media queries 856px is the width when the screen does not look properly 
+whereas 428px is closer to the actual mobile width
+*/
+
 /* landing introduction */
 
 .landing-logo-container {
