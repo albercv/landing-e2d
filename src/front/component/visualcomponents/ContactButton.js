@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import '../../css/visualcomponents/AppointmentButton.css'
 import { PopupModal } from 'react-calendly'
 
@@ -7,7 +7,6 @@ export const ContactButton = ({ buttonClass, buttonText, buttonType, showButton=
     const [state, setState] = useState({
         isOpen: false,
     });
-    const buttonRef = useRef(null);
 
     const buttonLogic = (type) => {
         if(type === 'CALENDLY') {
@@ -23,7 +22,7 @@ export const ContactButton = ({ buttonClass, buttonText, buttonType, showButton=
 
     return (
         <>
-            <button ref={buttonRef} className={buttonClass} onClick={() => {buttonLogic(buttonType)}}>
+            <button className={buttonClass} onClick={() => {buttonLogic(buttonType)}}>
                 {buttonText}
             </button>
             <PopupModal

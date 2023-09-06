@@ -7,7 +7,7 @@ export const NavBarLinksList = ({links}) => {
     return (
         <ul className='navbar-links-list'>
             {links.map((link, index) => {
-                return <li key={index} className='navbar-link-text'> {link} </li>;
+                return <li key={index} className='navbar-link-text'> <a href={`#${link}`} >{link}</a></li>;
             })}
         </ul>
     )

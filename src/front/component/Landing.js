@@ -3,6 +3,8 @@ import '../css/Landing.css';
 import { Introduction } from './Introduction';
 import { NavBar } from './visualcomponents/NavBar';
 import { Hamburger } from './visualcomponents/Hamburger';
+import { LanguageContextProvider } from '../service/LanguageContextProvider.js';
+
 
 export const Landing = () => {
 
@@ -30,8 +32,10 @@ export const Landing = () => {
 
     return (
         <>
-            <CurrentView />
-            <Introduction />
+            <LanguageContextProvider>
+                <CurrentView />
+                <Introduction />
+            </LanguageContextProvider>
         </>
     )
 }

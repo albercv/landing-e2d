@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from '../assets/images/logo.png'
 import '../css/LandingIntroduction.css'
 import headerImage from '../assets/images/header_landing.png'
 import { ContactButton } from './visualcomponents/ContactButton.js'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from '../service/LanguageContextProvider.js';
+
 
 export const Introduction = () => {
 
-    const { t } = useTranslation("global");
+    const { t, i18n } = useTranslation("global");
+    const { language } = useLanguage();
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+    }, [language])
 
     return (
         <div className='landing-introduction'>
