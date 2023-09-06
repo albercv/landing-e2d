@@ -3,8 +3,14 @@ In media queries 856px is the width when the screen does not look properly
 whereas 428px is closer to the actual mobile width
 */
 
+.dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .dropdown-flag {
-    max-width: 2%;
+    max-width: 10%;
     height: auto;
 }
 
@@ -17,7 +23,14 @@ whereas 428px is closer to the actual mobile width
     height: 30px;
     padding: 5px;
     min-width: 30px;
+    font-family: Roboto;
 }
+
+.dropdown-select-option {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #333;
+  }
 
 /* MEDIQUERIES MOBILE */
 @media (max-width: 856px) {
