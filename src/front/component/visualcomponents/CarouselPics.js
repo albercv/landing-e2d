@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import '../../css/visualcomponents/CarouselItem.css'
+import { CarouselItem } from './Carousel/CarouselItem';
 
 export const CarouselPics = () => {
 
@@ -22,8 +23,14 @@ export const CarouselPics = () => {
 
   return (
     <>
-      <div className='carousel-container'>
-        <div ref={item0} className='carousel-item'></div>
+      <div className='carousel-container'>      
+        <CarouselItem 
+        ref={item0} 
+        cssClass='carousel-item' 
+        picture={'../../assets/images/eeuu.png'} 
+        title={'España'} 
+        text={'España es el país más grande del mundo'} />
+
         <div ref={item1} className='carousel-item'></div>
         <div ref={item2}className='carousel-item'></div>
       </div>
