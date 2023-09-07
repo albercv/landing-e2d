@@ -17,7 +17,7 @@ export const Introduction = () => {
     }, [language])
 
     return (
-        <div className='landing-introduction'>
+        <section className='landing-introduction'>
             <div className='landing-logo-container'>
                 <img src={logo} className='landing-logo-img' alt="Logo evolve2digital image" />
             </div>
@@ -41,6 +41,6 @@ export const Introduction = () => {
                 </div>
             </div>
             <div className='landing-vision'></div>
-        </div>
+        </section>
     )
 }
