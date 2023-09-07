@@ -39,7 +39,7 @@ whereas 428px is closer to the actual mobile width
         flex-direction: row;
         align-content: stretch;
         justify-content: flex-start;
-        align-items: stretch;
+        align-items: center;
     }
 
     .dropdown-flag {
