@@ -1,0 +1,31 @@
+.carousel-container {
+    width: 100%;
+    height: 55vh;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 408px;
+    height: 408px;
+    flex-shrink: 0;
+    border-radius: 34px;
+    background: #F5F5F5;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+    margin-right: 64px;
+}
+
+.carousel-dots {
+    margin-top: 28px;    
+}
+
+.carousel-dots svg {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #05B4BA;
+}

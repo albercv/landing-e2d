@@ -1,0 +1,40 @@
+.landing-unlock-block {
+    min-height: 710px;
+    background-color: white;
+    display: flex;
+}
+
+.landing-unlock-text {
+    max-width: 50%;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+.landing-unlock-slider-section {
+    max-width: 50%;
+}
+
+.landing-unlock-text-title {
+    align-self: stretch;
+    color: #293039;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    padding-right: 1%;
+    /* 70.4px */
+}
+
+.landing-unlock-text-description {
+    align-self: stretch;
+    color: #293039;
+    /* Body/L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding-right: 5%;
+    margin-top: 28px;
+}
