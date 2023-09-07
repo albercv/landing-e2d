@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import logo from '../../assets/images/logo.png'
 import '../../css/visualcomponents/CarouselItem.css'
 
 export const CarouselPics = () => {

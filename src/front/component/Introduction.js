@@ -1,25 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import logo from '../assets/images/logo.png'
 import '../css/LandingIntroduction.css'
 import headerImage from '../assets/images/header_landing.png'
 import { ContactButton } from './visualcomponents/ContactButton.js'
 import { useTranslation } from 'react-i18next'
-import { useLanguage } from '../service/LanguageContextProvider.js';
 
 
 export const Introduction = () => {
 
-    const { t, i18n } = useTranslation("global");
-    const { language } = useLanguage();
-
-    useEffect(() => {
-        i18n.changeLanguage(language);
-    }, [language])
+    const { t } = useTranslation("global");
 
     return (
         <section className='landing-introduction'>
             <div className='landing-logo-container'>
-                <img src={logo} className='landing-logo-img' alt="Logo evolve2digital image" />
+                <img src={logo} className='landing-logo-img' alt="Logo evolve2digital" />
             </div>
             <div className='landing-introduction-block'>
                 <div className='landing-introduction-text'>
@@ -37,7 +31,7 @@ export const Introduction = () => {
                     </div>
                 </div>
                 <div className='landing-introduction-image'>
-                    <img src={headerImage} alt="header image" />
+                    <img src={headerImage} alt="transform the future" />
                 </div>
             </div>
             <div className='landing-vision'></div>
