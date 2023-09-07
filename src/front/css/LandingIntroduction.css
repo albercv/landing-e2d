@@ -176,6 +176,15 @@ whereas 428px is closer to the actual mobile width
     white-space: pre;
   }
 
+  .buttons {
+    display: block;
+  }
+
+  .buttons button {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
   .landing-introduction-image img {
     display: none;
   }

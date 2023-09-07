@@ -25,8 +25,10 @@ export const Hamburger = () => {
         <NavBarLinksList links={linksList} />
         <LanguageDropdown />
       </nav>
+      <label htmlFor="menu-control" className="sidebar__close">
+        <i className="hamburger__close"></i>
+      </label>
 
-      <label htmlFor="menu-control" className="sidebar__close"></label>
     </aside>
   </>)
 }
