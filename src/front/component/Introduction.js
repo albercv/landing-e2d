@@ -11,7 +11,7 @@ export const Introduction = () => {
     const { t } = useTranslation("global");
 
     return (
-        <section className='landing-introduction'>
+        <section id='introduction-section' className='landing-introduction'>
             <div className='landing-logo-container'>
                 <img src={logo} className='landing-logo-img' alt="Logo evolve2digital" />
             </div>

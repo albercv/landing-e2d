@@ -24,6 +24,7 @@ whereas 428px is closer to the actual mobile width
     padding: 5px;
     min-width: 30px;
     font-family: Roboto;
+    color: white;
 }
 
 .dropdown-select-option {

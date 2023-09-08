@@ -9,7 +9,12 @@ import { useTranslation } from 'react-i18next'
 export const NavBar = () => {
   const { t } = useTranslation("global");
 
-  const linksList = [t("navbar.aboutus"), t("navbar.services"), t("navbar.team"), t("navbar.contact")]
+  const linksList = {
+    "introduction-section": t("navbar.aboutus"),
+    "unlock-section": t("navbar.services"),
+    "team-section": t("navbar.team"),
+    "contact-section": t("navbar.contact")
+  };
 
   return (
     <nav className='navbar-container'>

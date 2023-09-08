@@ -9,7 +9,7 @@ export const UnlockSection = () => {
     const { t } = useTranslation("global");
 
     return (
-        <section className='landing-unlock-block'>
+        <section id="unlock-section" className='landing-unlock-block'>
             <div className='landing-unlock-text'>
                 <div className='landing-unlock-text-evolve'>EVOLVE2DIGITAL</div>
                 <div className='landing-unlock-text-title'>

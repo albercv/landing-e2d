@@ -1,15 +1,13 @@
-.navbar-ul-section {
-    
-}
-
 .navbar-ul-section ul {
     list-style: none;
     color: white;
     display: flex;
     grid-gap: 10px;
     white-space: nowrap;
+    padding-left: 20px;
 }
 
 .navbar-ul-section ul li {
     color: white;
+    text-shadow: 1px 0px rgba(41, 48, 57, 0.8);
 }
