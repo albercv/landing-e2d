@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react'
 import '../../css/visualcomponents/CarouselItem.css'
 import { CarouselItem } from './Carousel/CarouselItem';
+import eye from '../../assets/images/fi-rr-eye.svg'
+import dart from '../../assets/images/fi-rr-dart.svg'
+import mountain from '../../assets/images/mountain.png'
+import { useTranslation } from 'react-i18next'
 
 export const CarouselPics = () => {
 
@@ -9,6 +13,8 @@ export const CarouselPics = () => {
   const item2 = useRef(null);
   const items = {0: item0, 1: item1, 2: item2};
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const {t} = useTranslation("global");
 
   const handleCarouselClick = (index) => {
     setCurrentIndex(index);
@@ -27,12 +33,27 @@ export const CarouselPics = () => {
         <CarouselItem 
         ref={item0} 
         cssClass='carousel-item' 
-        picture={'../../assets/images/eeuu.png'} 
-        title={'España'} 
-        text={'España es el país más grande del mundo'} />
-
-        <div ref={item1} className='carousel-item'></div>
-        <div ref={item2}className='carousel-item'></div>
+        picture={eye} 
+        title={t("carousel.vision")} 
+        text={t("carousel.vision_text")} 
+        />
+        
+        <CarouselItem 
+        ref={item1} 
+        cssClass='carousel-item' 
+        picture={dart} 
+        title={t("carousel.mission")} 
+        text={t("carousel.mission_text")} 
+        />
+        
+        <CarouselItem 
+        ref={item2} 
+        cssClass='carousel-item' 
+        picture={mountain} 
+        title={t("carousel.goal")} 
+        text={t("carousel.goal_text")} 
+        />
+        
       </div>
       <div className='carousel-dots'>
         <svg width="84" height="18" viewBox="0 0 84 18" fill="none">

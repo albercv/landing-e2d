@@ -10,6 +10,26 @@
     padding-left: 5%;
 }
 
+.landing-unlock-text-evolve {
+    color: #05B4BA;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.landing-unlock-text-title {
+    color: #293039;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 70.4px */
+}
+
 .landing-unlock-slider-section {
     max-width: 50%;
 }
@@ -37,4 +57,14 @@
     line-height: 160%;
     padding-right: 5%;
     margin-top: 28px;
+}
+
+.landing-unlock-text-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.landing-unlock-text-button img {
+    padding-left: 16px;
 }

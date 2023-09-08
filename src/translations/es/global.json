@@ -2,7 +2,7 @@
     "introduction": {
         "unlock": "Libera",
         "claimText": "El ",
-        "future" : "Futuro de tu Negocio",
+        "future": "Futuro de tu Negocio",
         "introText": "Bienvenido a Evolve2Digital, una empresa tecnológica dinámica y visionaria con sede en Wyoming y un equipo español trasladado. Nos especializamos en aprovechar el poder de la tecnología para impulsar el crecimiento y el éxito empresarial. Nuestro equipo de expertos ofrece servicios punteros en desarrollo web y estrategia de productos diseñados para transformar tu empresa. Experimenta la confianza y la seguridad que brinda asociarse con Evolve2Digital mientras te ayudamos a liberar todo el potencial de tu negocio."
     },
     "navbar": {
@@ -16,5 +16,18 @@
     "buttons": {
         "appointment": "Reserva tu cita ahora",
         "contact": "Contáctanos"
+    },
+    "unlock_section": {
+        "title": "Desbloquea el Futuro de tu empresa a través de la Innovación Digital.",
+        "description": "Nuestro equipo de expertos combina visión creativa con habilidades técnicas excepcionales para convertir ideas en realidades digitales impactantes. Desde aplicaciones móviles hasta plataformas web y más allá, estamos dedicados a impulsar la transformación digital y guiar a las empresas hacia el éxito en la era digital.",
+        "team": "Nuestro Equipo"
+    },
+    "carousel": {
+        "vision": "Visión",
+        "mission": "Misión",
+        "goal": "Objetivo",
+        "vision_text": "En E2D, somos apasionados por la tecnología y el impacto que puede tener en las empresas.",
+        "mission_text": "Ayudamos a las empresas a transformarse digitalmente y prosperar en un mundo en línea. Nuestro equipo de expertos proporciona las herramientas y el conocimiento que necesitas para tener éxito.",
+        "goal_text": "Soluciones tecnológicas innovadoras para el crecimiento empresarial. Esa es nuestra misión en Evolve2digital."
     }
 }
