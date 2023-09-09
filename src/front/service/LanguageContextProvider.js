@@ -3,7 +3,8 @@ import React, { createContext, useContext, useState } from 'react';
 const LanguageContext = createContext();
 
 export function LanguageContextProvider({ children }) {
-  const [language, setLanguage] = useState(localStorage.getItem('language')); // Establece el idioma predeterminado
+  const defaultValue = 'EN';
+  const [language, setLanguage] = useState(localStorage.getItem('language') ?? defaultValue);
 
   const setNewLanguage = (newLanguage) => {
     setLanguage(newLanguage);

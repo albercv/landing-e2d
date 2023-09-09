@@ -1,13 +1,17 @@
 import React from 'react'
 import '../../css/visualcomponents/LinksList.css'
 
-export const NavBarLinksList = ({links}) => {
+export const NavBarLinksList = ({ links }) => {
 
-    
+
     return (
         <ul className='navbar-links-list'>
-            {links.map((link, index) => {
-                return <li key={index} className='navbar-link-text'> <a href={`#${link}`} >{link}</a></li>;
+            {Object.keys(links).map((linkKey) => {
+                return (
+                    <li key={linkKey} className='navbar-link-text'>
+                        <a href={`#${linkKey}`}>{links[linkKey]}</a>
+                    </li>
+                );
             })}
         </ul>
     )

@@ -4,6 +4,8 @@ import { Introduction } from './Introduction';
 import { NavBar } from './visualcomponents/NavBar';
 import { Hamburger } from './visualcomponents/Hamburger';
 import { LanguageContextProvider } from '../service/LanguageContextProvider.js';
+import { UnlockSection } from './UnlockSection';
+import { Footer } from './Footer';
 
 
 export const Landing = () => {
@@ -35,6 +37,8 @@ export const Landing = () => {
             <LanguageContextProvider>
                 <CurrentView />
                 <Introduction />
+                <UnlockSection />
+                <Footer />
             </LanguageContextProvider>
         </>
     )

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import EN from '../../assets/images/eeuu.png'
 import ES from '../../assets/images/spain.png'
 import '../../css/visualcomponents/LanguageDropdown.css'
@@ -18,9 +18,13 @@ export const LanguageDropdown = () => {
         i18n.changeLanguage(language);
     };
 
+    const evaluateLanguage = () => {
+        return language === 'EN' ? EN : ES
+    }
+
     return (
         <div className='dropdown-container'>
-            <img src={language === 'EN' ? EN : ES} className='dropdown-flag navbar-buttons-section' alt="flag" />
+            <img src={evaluateLanguage()} className='dropdown-flag navbar-buttons-section' alt="flag" />
             <select className='dropdown-select' id="language" value={language} onChange={(event) => handleOptionChange(event)}>
                 <option className='dropdown-select-option' value="EN">{t("navbar.dropdown_english")}</option>
                 <option className='dropdown-select-option' value="ES">{t("navbar.dropdown_spanish")}</option>

@@ -16,5 +16,18 @@
     "buttons":{
         "appointment" : "Book an appoinment now",
         "contact" : "Contact us"
+    },
+    "unlock_section":{
+        "title": "Unlocking the Future through Digital Innovation.",
+        "description": "Our team of experts merges creative vision with exceptional technical skills to turn ideas into impactful digital realities. From mobile applications to web platforms and beyond, we are dedicated to driving digital transformation and guiding businesses towards success in the digital era.",
+        "team": "Our Team"
+    },
+    "carousel":{
+        "vision": "Vision",
+        "mission": "Mission",
+        "goal": "Goal",
+        "vision_text": "At E2D, we're passionate about technology and the impact it can have on businesses.",
+        "mission_text": "We help businesses transform digitally and thrive in an online world. Our expert team provides the tools and knowledge you need to succeed.",
+        "goal_text": "Innovative technology solutions for business growth. That's our mission at Evolve2digital."
     }
 }
