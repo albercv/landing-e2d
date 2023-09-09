@@ -20,10 +20,11 @@
     padding-right: 40px;
 }
 
-.carousel-item h3, 
+.carousel-item h3,
 .carousel-item h1 {
     padding-top: 16px;
 }
+
 .carousel-item h1 {
     color: var(--blue-gray-900, #0F172A);
     /* Heading/6 */
@@ -31,8 +32,10 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 26.4px */
+    line-height: 110%;
+    /* 26.4px */
 }
+
 .carousel-item h3 {
     color: var(--blue-gray-600, #475569);
     /* Body/L */
@@ -40,16 +43,19 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 28.8px */
+    line-height: 160%;
+    /* 28.8px */
 }
 
 .carousel-item img {
-    width: 30px;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 
 .carousel-dots {
-    margin-top: 28px;    
+    margin-top: 28px;
+    width: 84px;
+    height: 18px;
 }
 
 .carousel-dots svg {
@@ -58,4 +64,36 @@
 
 .active {
     background-color: #05B4BA;
+}
+
+@media (max-width: 856px) {
+    .carousel-container {
+        margin: 0 5%;
+    }
+
+    .carousel-dots {
+        margin: 28px 10%;
+        margin-right: 100px;
+        text-align: center;
+
+    }
+
+    .carousel-item {
+        width: 350px;
+    }
+
+    .carousel-item h3 {
+        font-size: 13px;
+    }
+
+    .carousel-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-dots {
+        width: 50px;
+        height: 10px;
+        margin: 2% auto;
+    }
 }

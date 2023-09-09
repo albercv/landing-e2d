@@ -27,7 +27,8 @@
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
-    line-height: 110%; /* 70.4px */
+    line-height: 110%;
+    /* 70.4px */
 }
 
 .landing-unlock-slider-section {
@@ -63,8 +64,39 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 
 .landing-unlock-text-button img {
     padding-left: 16px;
+}
+
+@media (max-width: 856px) {
+    .landing-unlock-block {
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing-unlock-text {
+        max-width: 100%;
+        padding: 15% 5%;
+    }
+
+    .landing-unlock-text-title {
+        font-size: 36px;
+    }
+
+    .landing-unlock-text-description {
+        font-size: 13px;
+    }
+
+    .landing-unlock-slider-section {
+        max-width: 100%;
+    }
 }

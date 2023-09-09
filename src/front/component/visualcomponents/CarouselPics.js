@@ -18,7 +18,7 @@ export const CarouselPics = () => {
 
   const handleCarouselClick = (index) => {
     setCurrentIndex(index);
-    const newPosition = -index * 100; // 100% de desplazamiento por elemento
+    const newPosition = -index * 100;
     Object.keys(items).forEach((key) => {
       const item = items[key];
       if (item.current) {
