@@ -4,13 +4,11 @@ import { CarouselPics } from '../component/visualcomponents/CarouselPics.js';
 import arrow from '../assets/images/arrow.png'
 import { useTranslation } from 'react-i18next'
 import { CarouselSmallScreen } from '../component/visualcomponents/CarouselSmallScreen';
-import { useScreenSizeContext } from '../service/ScreenSizeContextProvider';
 
-export const UnlockSection = () => {
+export const UnlockSection = ({smallWindowSize}) => {
 
     const { t } = useTranslation("global");
     const desktopScreenMinimumSize = 856;
-    const {smallWindowSize} = useScreenSizeContext();
 
     const renderViewSize = {
         "CarouselPics": CarouselPics,

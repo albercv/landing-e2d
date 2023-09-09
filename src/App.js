@@ -1,13 +1,13 @@
 import './App.css';
 import { Router } from './front/component/routing/Router';
-import { ScreenSizeContextProvider } from './front/service/ScreenSizeContextProvider';
+import { LanguageContextProvider } from './front/service/LanguageContextProvider.js';
 
 function App() {
   return (
     <div className="App">
-      <ScreenSizeContextProvider>
+      <LanguageContextProvider>
         <Router />  
-      </ScreenSizeContextProvider>
+      </LanguageContextProvider>
     </div>
   );
 }

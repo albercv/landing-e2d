@@ -3,16 +3,13 @@ import './css/Landing.css';
 import { Introduction } from './pages/Introduction';
 import { NavBar } from './component/visualcomponents/NavBar';
 import { Hamburger } from './component/visualcomponents/Hamburger';
-import { LanguageContextProvider } from './service/LanguageContextProvider.js';
 import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
-import { useScreenSizeContext } from './service/ScreenSizeContextProvider';
-
 
 export const Landing = () => {
 
     const desktopScreenMinimumSize = 856;
-    const {smallWindowSize, setNewScreenSize} = useScreenSizeContext();
+    const [smallWindowSize, setNewScreenSize] = useState({ width: window.innerWidth });
 
     const renderViewSize = {
         "NavBar": NavBar,
@@ -35,12 +32,10 @@ export const Landing = () => {
 
     return (
         <>
-            <LanguageContextProvider>
-                <CurrentView />
-                <Introduction />
-                <UnlockSection />
-                <Footer />
-            </LanguageContextProvider>
+            <CurrentView />
+            <Introduction />
+            <UnlockSection smallWindowSize={smallWindowSize} />
+            <Footer />
         </>
     )
 }
