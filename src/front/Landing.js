@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import '../css/Landing.css';
-import { Introduction } from './Introduction';
-import { NavBar } from './visualcomponents/NavBar';
-import { Hamburger } from './visualcomponents/Hamburger';
-import { LanguageContextProvider } from '../service/LanguageContextProvider.js';
-import { UnlockSection } from './UnlockSection';
-import { Footer } from './Footer';
+import './css/Landing.css';
+import { Introduction } from './pages/Introduction';
+import { NavBar } from './component/visualcomponents/NavBar';
+import { Hamburger } from './component/visualcomponents/Hamburger';
+import { LanguageContextProvider } from './service/LanguageContextProvider.js';
+import { UnlockSection } from './pages/UnlockSection';
+import { Footer } from './pages/Footer';
 
 
 export const Landing = () => {

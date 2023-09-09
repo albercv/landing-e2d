@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/images/logo.png'
 import '../css/LandingIntroduction.css'
 import headerImage from '../assets/images/header_landing.png'
-import { ContactButton } from './visualcomponents/ContactButton.js'
+import { ContactButton } from '../component/visualcomponents/ContactButton.js'
 import { useTranslation } from 'react-i18next'
 
 

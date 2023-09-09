@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/UnlockSection.css';
-import { CarouselPics } from './visualcomponents/CarouselPics.js';
+import { CarouselPics } from '../component/visualcomponents/CarouselPics.js';
 import arrow from '../assets/images/arrow.png'
 import { useTranslation } from 'react-i18next'
 
