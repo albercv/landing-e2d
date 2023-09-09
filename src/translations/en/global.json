@@ -15,7 +15,8 @@
     },
     "buttons":{
         "appointment" : "Book an appoinment now",
-        "contact" : "Contact us"
+        "contact" : "Contact us",
+        "contact_help": "Contact us to help you"
     },
     "unlock_section":{
         "title": "Unlocking the Future through Digital Innovation.",
