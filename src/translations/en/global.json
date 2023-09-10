@@ -2,28 +2,28 @@
     "introduction": {
         "unlock": "Unlock",
         "claimText": "Your ",
-        "future" : "Business's Future.",
+        "future": "Business's Future.",
         "introText": "Welcome to Evolve2Digital, a dynamic and forward-thinking tech company based in Wyoming with a relocated Spanish team. We specialize in leveraging the power of technology to drive business growth and success. Our team of experts offers cutting-edge web development and product strategy services tailored to transform your company. Experience the confidence and trust that comes with partnering with Evolve2Digital as we help you unlock your business's full potential."
     },
-    "navbar":{
-        "aboutus" : "About us",
-        "services" : "Solutions",
-        "contact" : "Contact",
-        "team" : "Team",
+    "navbar": {
+        "aboutus": "About us",
+        "services": "Solutions",
+        "contact": "Contact",
+        "team": "Team",
         "dropdown_spanish": "Spanish",
         "dropdown_english": "English"
     },
-    "buttons":{
-        "appointment" : "Book an appoinment now",
-        "contact" : "Contact us",
+    "buttons": {
+        "appointment": "Book an appoinment now",
+        "contact": "Contact us",
         "contact_help": "Contact us to help you"
     },
-    "unlock_section":{
+    "unlock_section": {
         "title": "Unlocking the Future through Digital Innovation.",
         "description": "Our team of experts merges creative vision with exceptional technical skills to turn ideas into impactful digital realities. From mobile applications to web platforms and beyond, we are dedicated to driving digital transformation and guiding businesses towards success in the digital era.",
         "team": "Our Team"
     },
-    "carousel":{
+    "carousel": {
         "vision": "Vision",
         "mission": "Mission",
         "goal": "Goal",
@@ -31,7 +31,7 @@
         "mission_text": "We help businesses transform digitally and thrive in an online world. Our expert team provides the tools and knowledge you need to succeed.",
         "goal_text": "Innovative technology solutions for business growth. That's our mission at Evolve2digital."
     },
-    "our_services":{
+    "our_services": {
         "caption": "Solutions",
         "title": "Our services",
         "description": "At Evolve2Digital, we know that the digital world can be overwhelming, which is why we offer a range of services designed to help your business succeed. From web development to product strategy, our team of experts is ready to help you unlock your potential and achieve your goals.",
@@ -46,6 +46,12 @@
     },
     "our_work": {
         "title": "Our work",
-        "description": "Here are some examples of our work and the results we have achieved for our clients."
+        "description": "Here are some examples of our work and the results we have achieved for our clients.",
+        "store": "Online Store",
+        "store_description": "Increased sales by 70% in the first year.",
+        "mobile_first": "Mobile First",
+        "mobile_first_description": "At our agency, mobile comes first. That means everything we do is designed to work seamlessly on any device, anywhere.",
+        "analytics_dashboard": "Analitycs Dashboard",
+        "analytics_dashboard_description": "Our data visibility boost: 50% improvement and counting."
     }
 }
