@@ -24,22 +24,22 @@ export const OurServices = () => {
                     <p className='our-services-description'>{t("our_services.description")}</p>
                 </div>
                 <div className='our-services-cards-grid'>
-                    <div className='our-services-column-header'>Web Development</div>
-                    <div className='our-services-column-header'>Product Strategy</div>
-                    <Card picture={browserPic} text={"Custom web development"} />
-                    <Card picture={bulb} text={"Product ideation"} />
-                    <Card picture={smartphone} text={"Responsive design"} />
-                    <Card picture={user} text={"User research"} />
-                    <Card picture={dashboard} text={"Performance optimization"} />
-                    <Card picture={check} text={"Launch planning"} />
+                    <div className='our-services-column-header'>{t("our_services.development")}</div>
+                    <div className='our-services-column-header'>{t("our_services.strategy")}</div>
+                    <Card picture={browserPic} text={t("our_services.custom_dev")} />
+                    <Card picture={bulb} text={t("our_services.ideation")} />
+                    <Card picture={smartphone} text={t("our_services.responsive")} />
+                    <Card picture={user} text={t("our_services.research")} />
+                    <Card picture={dashboard} text={t("our_services.optimization")} />
+                    <Card picture={check} text={t("our_services.planning")} />
                 </div>
                 <div>
                     <ContactButton buttonClass='landing-introduction-booking-button booking-style-contact-button' buttonText={t("buttons.contact_help")} buttonType='NO_CALENDLY' showButton={true} />
                 </div>
                 <section>
                     <div className='our-work-section'>
-                        <h1>Our Work</h1>
-                        <h6>Here are some examples of our work and the results we have achieved for our clients.</h6>
+                        <h1>{t("our_work.title")}</h1>
+                        <h6>{t("our_work.description")}</h6>
                     </div>
                 </section>
             </div>
