@@ -5,6 +5,8 @@ import { NavBar } from './component/visualcomponents/NavBar';
 import { Hamburger } from './component/visualcomponents/Hamburger';
 import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
+import { OurServices } from './pages/OurServices';
+import { Works } from './pages/Works';
 
 export const Landing = () => {
 
@@ -35,6 +37,8 @@ export const Landing = () => {
             <CurrentView />
             <Introduction />
             <UnlockSection smallWindowSize={smallWindowSize} />
+            <OurServices />
+            <Works />
             <Footer />
         </>
     )

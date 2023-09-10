@@ -166,7 +166,6 @@ whereas 428px is closer to the actual mobile width
   }
 
   .landing-introduction-text-description {
-    -webkit-text-stroke: 0.25px black;
     width: 100%;
     font-weight: 600;
   }

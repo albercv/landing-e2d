@@ -15,7 +15,8 @@
     },
     "buttons": {
         "appointment": "Reserva tu cita ahora",
-        "contact": "Contáctanos"
+        "contact": "Contáctanos",
+        "contact_help": "Contáctanos y te ayudamos"
     },
     "unlock_section": {
         "title": "Desbloquea el Futuro de tu empresa a través de la Innovación Digital.",
@@ -29,5 +30,28 @@
         "vision_text": "En E2D, somos apasionados por la tecnología y el impacto que puede tener en las empresas.",
         "mission_text": "Ayudamos a las empresas a transformarse digitalmente y prosperar en un mundo en línea. Nuestro equipo de expertos proporciona las herramientas y el conocimiento que necesitas para tener éxito.",
         "goal_text": "Soluciones tecnológicas innovadoras para el crecimiento empresarial. Esa es nuestra misión en Evolve2digital."
+    },
+    "our_services": {
+        "caption": "Soluciones",
+        "title": "Nuestros servicios",
+        "description": "En Evolve2Digital, sabemos que el mundo digital puede ser abrumador, por eso ofrecemos una variedad de servicios diseñados para ayudar a que tu negocio tenga éxito. Desde desarrollo web hasta estrategia de productos, nuestro equipo de expertos está listo para ayudarte a desbloquear tu potencial y alcanzar tus objetivos.",
+        "development": "Desarrollo web",
+        "strategy": "Estrategia de productos",
+        "custom_dev": "Desarrollo web personalizado",
+        "ideation": "Ideación de productos",
+        "responsive": "Diseño adaptable",
+        "research": "Investigación de usuarios",
+        "optimization": "Optimización de rendimiento",
+        "planning": "Planificación de lanzamiento"
+    },
+    "our_work": {
+        "title": "Nuestro trabajo",
+        "description": "Aquí tienes algunos ejemplos de nuestro trabajo y los resultados que hemos logrado para nuestros clientes.",
+        "store": "Tienda en línea",
+        "store_description": "Aumento de ventas del 70% en el primer año.",
+        "mobile_first": "Móvil primero",
+        "mobile_first_description": "En nuestra agencia, los dispositivos móviles son prioritarios. Esto significa que todo lo que hacemos está diseñado para funcionar sin problemas en cualquier dispositivo y en cualquier lugar.",
+        "analytics_dashboard": "Tablero de análisis",
+        "analytics_dashboard_description": "Nuestra mejora en la visibilidad de datos: un aumento del 50% y sigue creciendo."
     }
 }
