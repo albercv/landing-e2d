@@ -30,5 +30,22 @@
         "vision_text": "At E2D, we're passionate about technology and the impact it can have on businesses.",
         "mission_text": "We help businesses transform digitally and thrive in an online world. Our expert team provides the tools and knowledge you need to succeed.",
         "goal_text": "Innovative technology solutions for business growth. That's our mission at Evolve2digital."
+    },
+    "our_services":{
+        "caption": "Solutions",
+        "title": "Our services",
+        "description": "At Evolve2Digital, we know that the digital world can be overwhelming, which is why we offer a range of services designed to help your business succeed. From web development to product strategy, our team of experts is ready to help you unlock your potential and achieve your goals.",
+        "development": "Web Development",
+        "strategy": "Product Strategy",
+        "custom_dev": "Custom web development",
+        "ideation": "Product ideation",
+        "responsive": "Responsive design",
+        "research": "User research",
+        "optimization": "Performance optimization",
+        "planning": "Launch planning"
+    },
+    "our_work": {
+        "title": "Our work",
+        "description": "Here are some examples of our work and the results we have achieved for our clients."
     }
 }

@@ -19,9 +19,9 @@ export const OurServices = () => {
         <section >
             <div className='our-services-block'>
                 <div className='our-services-text'>
-                    <h3 className='our-services-caption'>Solutions</h3>
-                    <h1 className='our-services-title'>Our Services</h1>
-                    <p className='our-services-description'>At Evolve2Digital, we know that the digital world can be overwhelming, which is why we offer a range of services designed to help your business succeed. From web development to product strategy, our team of experts is ready to help you unlock your potential and achieve your goals.</p>
+                    <h3 className='our-services-caption'>{t("our_services.caption")}</h3>
+                    <h1 className='our-services-title'>{t("our_services.title")}</h1>
+                    <p className='our-services-description'>{t("our_services.description")}</p>
                 </div>
                 <div className='our-services-cards-grid'>
                     <div className='our-services-column-header'>Web Development</div>

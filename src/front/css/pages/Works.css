@@ -1,0 +1,57 @@
+.passed-works-section {
+    display: flex;
+    width: 100%;
+}
+
+.passed-works-one-third {
+    width: 33.33%;
+    height: 608px;
+}
+
+.store-image{
+    background: url('../../assets/images/productLayer/store.png'), no-repeat;
+}
+
+.mobile-image{
+    background: url('../../assets/images/productLayer/mobile.png'), no-repeat;
+}
+
+.dashboard-image{
+    background: url('../../assets/images/productLayer/dashboard.png'), no-repeat;
+}
+
+.passed-works-overlay {
+    background: rgba(5, 180, 186, 0.90);
+    width: auto;
+    height: 100%;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.passed-works-text {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.passed-works-overlay h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+.passed-works-overlay h1, .passed-works-overlay p {
+    width: 80%;
+}
+
+.passed-works-section img{
+    height: 608px;
+}
