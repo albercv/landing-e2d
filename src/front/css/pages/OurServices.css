@@ -131,3 +131,35 @@
     line-height: 160%; /* 28.8px */
     margin-bottom: 80px;
 }
+
+@media (max-width: 856px) {
+
+    .our-services-title {
+        font-size: 36px;
+    }
+
+    .our-services-description {
+        font-size: 13px;
+        padding:0 20px;
+    }
+
+    .our-services-cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-services-column-header-second-row {
+        grid-row: 5;
+    }
+
+    .our-services-column-header {
+        font-size: 30px;
+    }
+
+    .our-services-card p {
+        font-size: 18px;
+    }
+
+    .our-services-card img {
+        max-width: 30px;
+    }
+}
