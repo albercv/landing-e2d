@@ -1,13 +1,122 @@
-.partnership-section {
-    background: white;
-    background-color: white;
-    background-image: none;
-    display: flex;
-    z-index: 10;
+.partnership-section-text-title {
+    color: #293039;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+
 }
+
+.partnership-section-text-description {
+    color: #293039;
+    text-align: center;
+    /* Body/L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.partnership-section-image-title {
+    color: #293039;
+    text-align: center;
+    /* Body/L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+@media (min-width: 857px) {
+    .partnership-section-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .partnership-section-image {
+        max-width: 100%;
+        border-radius: 15px 70px;
+    }
+
+    .partnership-section-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
+    .partnership-section {
+        background: white;
+        display: flex;
+        z-index: 10;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partnership-section-text {
+        max-width: 948px;
+        text-align: center;
+        justify-content: center;
+        margin: 100px 150px;
+    }
+}
+
 
 @media (max-width: 856px) {
     .partnership-section {
-        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partnership-section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin: 80px 36px;
+    }
+
+    .partnership-section-text-title {
+        font-size: 36px;
+    }
+
+    .partnership-section-text-description {
+        font-size: 13px;
+    }
+
+    .partnership-section-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 98px;
+    }
+
+    .partnership-section-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partnership-section-image {
+        max-height: 250px;
+        max-width: 50%;
+        border-radius: 100%;
+    }
+
+    .partnership-section-image-title {
+        font-size: 13px;
     }
 }

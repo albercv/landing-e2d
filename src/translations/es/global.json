@@ -53,5 +53,9 @@
         "mobile_first_description": "En nuestra agencia, los dispositivos móviles son prioritarios. Esto significa que todo lo que hacemos está diseñado para funcionar sin problemas en cualquier dispositivo y en cualquier lugar.",
         "analytics_dashboard": "Dashboard",
         "analytics_dashboard_description": "Nuestra mejora en la visibilidad de datos: un aumento del 50% creciendo."
+    },
+    "partnership": {
+        "title": "Socios y Clientes",
+        "description": "En Evolve2Digital, creemos en la construcción de asociaciones duraderas con nuestros clientes. Aquí tienes algunas de las empresas con las que hemos tenido el placer de trabajar:"
     }
 }

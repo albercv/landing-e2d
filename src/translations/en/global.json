@@ -53,5 +53,9 @@
         "mobile_first_description": "At our agency, mobile comes first. That means everything we do is designed to work seamlessly on any device, anywhere.",
         "analytics_dashboard": "Analitycs Dashboard",
         "analytics_dashboard_description": "Our data visibility boost: 50% improvement and counting."
+    },
+    "partnership": {
+        "title": "Partnerships and Clients",
+        "description": "At Evolve2Digital, we believe in building long-lasting partnerships with our clients. Here are some of the companies we have had the pleasure of working with:"
     }
 }
