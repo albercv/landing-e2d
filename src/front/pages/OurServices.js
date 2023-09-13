@@ -25,7 +25,7 @@ export const OurServices = () => {
                 </div>
                 <div className='our-services-cards-grid'>
                     <div className='our-services-column-header'>{t("our_services.development")}</div>
-                    <div className='our-services-column-header'>{t("our_services.strategy")}</div>
+                    <div className='our-services-column-header our-services-column-header-second-row'>{t("our_services.strategy")}</div>
                     <Card picture={browserPic} text={t("our_services.custom_dev")} />
                     <Card picture={bulb} text={t("our_services.ideation")} />
                     <Card picture={smartphone} text={t("our_services.responsive")} />

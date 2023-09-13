@@ -8,15 +8,15 @@
     height: 608px;
 }
 
-.store-image{
+.store-image {
     background: url('../../assets/images/productLayer/store.png'), no-repeat;
 }
 
-.mobile-image{
+.mobile-image {
     background: url('../../assets/images/productLayer/mobile.png'), no-repeat;
 }
 
-.dashboard-image{
+.dashboard-image {
     background: url('../../assets/images/productLayer/dashboard.png'), no-repeat;
 }
 
@@ -48,10 +48,38 @@
     font-weight: 700;
     line-height: 110%;
 }
-.passed-works-overlay h1, .passed-works-overlay p {
+
+.passed-works-overlay h1,
+.passed-works-overlay p {
     width: 80%;
 }
 
-.passed-works-section img{
+.passed-works-section img {
     height: 608px;
+}
+
+@media (max-width: 856px) {
+    .passed-works-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .passed-works-one-third {
+        width: 100%;
+    }
+
+    .passed-works-overlay {
+        margin-left: 0px;
+        height: 50%;
+        color: white;
+        transform: translateY(99.9%);
+    }
+
+    .passed-works-text {
+        width: 100%;
+    }
+
+    .passed-works-overlay p {
+        font-size: 13px;
+    }
 }

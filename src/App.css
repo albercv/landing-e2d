@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: Roboto;
 }
@@ -7,12 +9,32 @@ html {
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, blockquote {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+blockquote {
   margin: 0;
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -22,7 +44,12 @@ a {
 }
 
 /* Restablecer los estilos de encabezado */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -34,7 +61,10 @@ img {
 }
 
 /* Restablecer los estilos de formulario para una apariencia consistente en diferentes navegadores */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   margin: 0;
   padding: 0;
   border: none;
@@ -44,6 +74,9 @@ button, input, select, textarea {
 }
 
 /* Restablecer los estilos de los elementos que pueden ser seleccionados */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   user-select: text;
 }
