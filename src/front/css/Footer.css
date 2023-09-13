@@ -2,8 +2,9 @@
     width: 100%;
 }
 
-.flaticon-link {
+.flaticon-link a{
     font-size: 7px;
     font-family: Roboto;
     margin-left: 10px;
+    color: white;
 }

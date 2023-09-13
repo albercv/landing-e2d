@@ -7,6 +7,7 @@ import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
 import { OurServices } from './pages/OurServices';
 import { Works } from './pages/Works';
+import { Partnership } from './pages/Partnership';
 
 export const Landing = () => {
 
@@ -39,6 +40,7 @@ export const Landing = () => {
             <UnlockSection smallWindowSize={smallWindowSize} />
             <OurServices />
             <Works />
+            <Partnership />
             <Footer />
         </>
     )

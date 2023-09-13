@@ -1,0 +1,13 @@
+.partnership-section {
+    background: white;
+    background-color: white;
+    background-image: none;
+    display: flex;
+    z-index: 10;
+}
+
+@media (max-width: 856px) {
+    .partnership-section {
+        
+    }
+}

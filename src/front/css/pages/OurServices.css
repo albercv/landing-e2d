@@ -128,7 +128,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 28.8px */
+    line-height: 160%;
+    /* 28.8px */
     margin-bottom: 80px;
 }
 
@@ -136,11 +137,12 @@
 
     .our-services-title {
         font-size: 36px;
+        padding: 0 20px;
     }
 
     .our-services-description {
         font-size: 13px;
-        padding:0 20px;
+        padding: 0 20px;
     }
 
     .our-services-cards-grid {
@@ -161,5 +163,19 @@
 
     .our-services-card img {
         max-width: 30px;
+    }
+
+    .our-work-section {
+        margin-bottom: 10px;
+    }
+
+    .our-work-section h1 {
+        font-size: 36px;
+        padding: 0 20px;
+    }
+
+    .our-work-section h6 {
+        font-size: 13px;
+        padding: 0 20px;
     }
 }
