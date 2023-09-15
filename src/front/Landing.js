@@ -37,10 +37,11 @@ export const Landing = () => {
         <>
             <CurrentView />
             <Introduction />
-            <UnlockSection smallWindowSize={smallWindowSize} />
+            <UnlockSection smallWindowSize={smallWindowSize} section="unlock" />
             <OurServices />
             <Works />
             <Partnership />
+            <UnlockSection smallWindowSize={smallWindowSize} section="team" />
             <Footer />
         </>
     )

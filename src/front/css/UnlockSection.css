@@ -1,7 +1,15 @@
 .landing-unlock-block {
     min-height: 710px;
-    background-color: white;
     display: flex;
+}
+
+
+.landing-unlock-block.unlock {
+    background-color: white;
+}
+
+.landing-unlock-block.team {
+    background: #293039;
 }
 
 .landing-unlock-text {
@@ -37,7 +45,6 @@
 
 .landing-unlock-text-title {
     align-self: stretch;
-    color: #293039;
     font-family: Roboto;
     font-size: 64px;
     font-style: normal;
@@ -74,6 +81,16 @@
 
 .landing-unlock-text-button img {
     padding-left: 16px;
+}
+
+.landing-unlock-text-description.unlock,
+.landing-unlock-text-title.unlock {
+    color: #293039;
+}
+
+.landing-unlock-text-title.team,
+.landing-unlock-text-description.team {
+    color: white;
 }
 
 @media (max-width: 856px) {

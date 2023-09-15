@@ -13,11 +13,11 @@
     border-radius: 34px;
     background: #F5F5F5;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
-    margin-right: 64px;
     padding-top: 92px;
     padding-left: 66px;
     padding-right: 40px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .carousel-item h3,
@@ -56,6 +56,7 @@
     margin-top: 28px;
     width: 84px;
     height: 18px;
+    margin-bottom: 30px;
 }
 
 .carousel-dots svg {
@@ -66,23 +67,54 @@
     background-color: #05B4BA;
 }
 
+
+@media (min-width: 857px) {
+
+    .carousel-item.team-section {
+        text-align: center;
+    }
+
+    .carousel-item.team-section img {
+        height: auto;
+        width: 200px;
+        max-height: 200px;
+        border-radius: 20px;
+    }
+}
+
+
 @media (max-width: 856px) {
+
+    .carousel-item.unlock-section img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-item.team-section {
+        text-align: center;
+        padding: 25% 25%;
+    }
+
+    .carousel-item.team-section img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        max-height: 200px;
+        border-radius: 20px;
+    }
+
+    .carousel-item.unlock-section {
+        margin: 5px 5px;
+    }
+
     .carousel-container {
         padding: 0 5%;
         margin-top: 0;
-    }
-
-    .carousel-item {
-        width: 350px;
+        justify-content: center;
     }
 
     .carousel-item h3 {
         font-size: 13px;
-    }
-
-    .carousel-item img {
-        width: 30px;
-        height: 30px;
     }
 
     .carousel-dots {

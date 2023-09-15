@@ -57,5 +57,9 @@
     "partnership": {
         "title": "Socios y Clientes",
         "description": "En Evolve2Digital, creemos en la construcción de asociaciones duraderas con nuestros clientes. Aquí tienes algunas de las empresas con las que hemos tenido el placer de trabajar:"
+    },
+    "team": {
+        "title": "Nuestro Equipo",
+        "description": "Somos una destacada empresa de desarrollo digital, en la vanguardia de la innovación tecnológica. Creamos soluciones digitales personalizadas que superan las expectativas y abren las puertas al futuro."
     }
 }
