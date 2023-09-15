@@ -57,5 +57,9 @@
     "partnership": {
         "title": "Partnerships and Clients",
         "description": "At Evolve2Digital, we believe in building long-lasting partnerships with our clients. Here are some of the companies we have had the pleasure of working with:"
+    },
+    "team": {
+        "title": "Our Team",
+        "description": "We are a leading digital development company, at the forefront of technological innovation. We create personalized digital solutions that transcend expectations and open the doors to the future."
     }
 }
