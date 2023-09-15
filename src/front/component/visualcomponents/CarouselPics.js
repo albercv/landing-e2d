@@ -29,7 +29,6 @@ export const CarouselPics = ({ carouselItems, fillColor='#293039', sectionId }) 
 
   const insertItems = () => {
     return Object.keys(carouselItems).map((key, index) => {
-      console.log(`SectionID: ${sectionId}`);
       const item = carouselItems[key];
       return (
 

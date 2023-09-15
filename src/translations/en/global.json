@@ -61,5 +61,40 @@
     "team": {
         "title": "Our Team",
         "description": "We are a leading digital development company, at the forefront of technological innovation. We create personalized digital solutions that transcend expectations and open the doors to the future."
+    },
+    "contact": {
+        "title": "Let's Talk",
+        "description": "Ready to shape the future of your business in the digital realm? Contact us today to explore limitless possibilities."
+    },
+    "contactForm": {
+        "name": "Name & Last Name",
+        "company": "Company",
+        "email": "Email",
+        "message": "Tell us your needs",
+        "send": "Send",
+        "phone": "Phone number",
+        "nameError": {
+            "required": "Hi, NoName",
+            "minLength": "Hi, "
+        },
+        "companyError": {
+            "required": "Everybody works for someone!",
+            "minLength": "Are you serious? there are not even 3 letters in your company name!"
+        },
+        "emailError": {
+            "required": "No email, no trail.",
+            "pattern": "Try it better!"
+        },
+        "messageError": {
+            "required": "Spill the beans on your dreams, and we'll help make them the real thing!",
+            "minLength": "Your story's too short; give us some more report!"
+        },
+        "sendError": {
+            "validate": "You seem a bit like a robot! Are you?"
+        },
+        "phoneError": {
+            "required": "Playing hard to get? Drop us your number!",
+            "minLength": "I don't know a phone number that short! add the country code!"
+        }
     }
 }
