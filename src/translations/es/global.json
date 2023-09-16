@@ -61,5 +61,20 @@
     "team": {
         "title": "Nuestro Equipo",
         "description": "Somos una destacada empresa de desarrollo digital, en la vanguardia de la innovación tecnológica. Creamos soluciones digitales personalizadas que superan las expectativas y abren las puertas al futuro."
+    },
+    "contact": {
+        "title": "Hablemos",
+        "description": "¿Listo para moldear el futuro de tu negocio en el ámbito digital? Contáctanos hoy para explorar posibilidades ilimitadas."
+    },
+    "contactForm": {
+        "nameError": {
+            "required": "Name field is required",
+            "minlength": "Name must be at least 3 characters long"
+        },
+        "company": "Empresa",
+        "email": "Correo electrónico",
+        "message": "Cuéntanos tus necesidades",
+        "send": "Enviar",
+        "phone": "Número de teléfono"
     }
 }

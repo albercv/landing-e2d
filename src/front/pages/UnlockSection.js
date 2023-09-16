@@ -37,7 +37,6 @@ export const UnlockSection = ({ smallWindowSize, section }) => {
     const Carousel = smallWindowSize.width > desktopScreenMinimumSize ? renderViewSize["CarouselPics"] : renderViewSize["CarouselSmallScreen"];
 
     return (
-        // {}
         <section id={`${renderSection.text.sectionId}`} className={`landing-unlock-block ${section}`}>
             <div className={`landing-unlock-text ${section}`}>
                 <div className='landing-unlock-text-evolve'>EVOLVE2DIGITAL</div>
