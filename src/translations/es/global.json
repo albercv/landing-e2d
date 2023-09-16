@@ -67,14 +67,34 @@
         "description": "¿Listo para moldear el futuro de tu negocio en el ámbito digital? Contáctanos hoy para explorar posibilidades ilimitadas."
     },
     "contactForm": {
-        "nameError": {
-            "required": "Name field is required",
-            "minlength": "Name must be at least 3 characters long"
-        },
+        "name": "Nombre & Apellido",
         "company": "Empresa",
         "email": "Correo electrónico",
         "message": "Cuéntanos tus necesidades",
         "send": "Enviar",
-        "phone": "Número de teléfono"
+        "phone": "Número de teléfono",
+        "nameError": {
+            "required": "Hola, SinNombre",
+            "minLength": "Hola, "
+        },
+        "companyError": {
+            "required": "¡Todo el mundo trabaja para alguien!",
+            "minLength": "¿En serio? ¡ni siquiera hay 3 letras en el nombre de tu empresa!"
+        },
+        "emailError": {
+            "required": "Email ausente, respuesta pendiente.",
+            "pattern": "¡Inténtalo con más ganas¡ ni arroba has puesto..."
+        },
+        "messageError": {
+            "required": "Háblanos de tus metas, ¡estamos aquí para concretarlas!",
+            "minLength": "¡Qué historia tan corta! ¡danos más detalles!"
+        },
+        "sendError": {
+            "validate": "¡Pareces un robot! ¿Lo eres?"
+        },
+        "phoneError": {
+            "required": "¿Te estás haciendo el dificil? ¡Danos tu número!",
+            "minLength": "¡No conozco un número de teléfono tan corto! ¡Recuerda el código del país!"
+        }
     }
 }
