@@ -75,7 +75,8 @@
         "phone": "Número de teléfono",
         "nameError": {
             "required": "Hola, SinNombre",
-            "minLength": "Hola, "
+            "minLength": "Hola, ",
+            "minLength_second": "un nombre de menos de 3 letras, meh..."
         },
         "companyError": {
             "required": "¡Todo el mundo trabaja para alguien!",

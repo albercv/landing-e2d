@@ -75,7 +75,8 @@
         "phone": "Phone number",
         "nameError": {
             "required": "Hi, NoName",
-            "minLength": "Hi, "
+            "minLength": "Hi, ",
+            "minLength_second": "not even 3 letters name, meh..."
         },
         "companyError": {
             "required": "Everybody works for someone!",

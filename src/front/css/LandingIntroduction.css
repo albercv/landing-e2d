@@ -107,6 +107,9 @@ whereas 428px is closer to the actual mobile width
 @media (max-width: 856px) {
 
   .landing-introduction {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
