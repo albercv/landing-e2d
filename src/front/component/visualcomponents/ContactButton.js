@@ -14,6 +14,14 @@ export const ContactButton = ({ buttonClass, buttonText, buttonType, showButton=
                 isOpen: !prevState.isOpen
               }));
         }
+
+        if (type === 'NO_CALENDLY') {
+            redirectToId();
+        }
+    }
+
+    const redirectToId = () => {
+        window.location.href = "#contact-section"
     }
 
     if (!showButton) {
