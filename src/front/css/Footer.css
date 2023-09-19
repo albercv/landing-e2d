@@ -1,10 +1,52 @@
 .flaticon-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+    font-size: 10px;
+    background-color: #293039;
 }
 
-.flaticon-link a{
-    font-size: 7px;
+.flaticon-link a {
     font-family: Roboto;
-    margin-left: 10px;
+    color: white;
+}
+
+.flaticon-email-us a {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.flaticon-email-us {
+    font-size: 20px;
+    color: #05B4BA;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.flaticon-phone-us {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.flaticon-container.no-footer {
+    background-color: transparent !important;
+    background: transparent !important;
+    margin-top: 40vh;
+}
+
+.flaticon.no-footer {display:none;}
+
+.flaticon-email-us.no-footer {
+    margin: 10 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
     color: white;
 }
