@@ -1,5 +1,5 @@
 import alber from '../images/team/alberto.png'
-import mary from '../images/team/mary2.png'
+import mary from '../images/team/mary_v2.png'
 import otto from '../images/team/otto.png'
 
 export const TeamSectionData = {
