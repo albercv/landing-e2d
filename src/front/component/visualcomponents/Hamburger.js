@@ -3,6 +3,7 @@ import '../../css/visualcomponents/Hamburger.css'
 import { LanguageDropdown } from './LanguageDropdown'
 import { NavBarLinksList } from './NavBarLinksList'
 import { useTranslation } from 'react-i18next'
+import { Footer } from '../../pages/Footer'
 
 export const Hamburger = () => {
 
@@ -29,6 +30,7 @@ export const Hamburger = () => {
       <nav className="sidebar__menu">
         <NavBarLinksList links={linksList} />
         <LanguageDropdown />
+        <Footer cssClass='no-footer'/>
       </nav>
       <label htmlFor="menu-control" className="sidebar__close">
         <i className="hamburger__close"></i>

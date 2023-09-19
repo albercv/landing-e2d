@@ -31,5 +31,22 @@
 .flaticon-phone-us {
     font-size: 20px;
     margin-left: 20px;
-    color: #05B4BA;
+}
+
+
+.flaticon-container.no-footer {
+    background-color: transparent !important;
+    background: transparent !important;
+    margin-top: 40vh;
+}
+
+.flaticon.no-footer {display:none;}
+
+.flaticon-email-us.no-footer {
+    margin: 10 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    color: white;
 }
