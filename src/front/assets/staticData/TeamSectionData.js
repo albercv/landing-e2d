@@ -1,6 +1,6 @@
 import alber from '../images/team/alberto.png'
 import mary from '../images/team/mary_v2.png'
-import otto from '../images/team/otto.png'
+import mavi from '../images/team/mavi.jpeg'
 
 export const TeamSectionData = {
     text: {
@@ -10,15 +10,8 @@ export const TeamSectionData = {
         dotsColor: "#FFFFFF"
     },
     slides: {
-        alberto: {
-            position: 0,
-            image: alber,
-            title: "Alberto Carrasco",
-            text: "CEO",
-            cssClass: "carousel-item",
-        },
         mary: {
-            position: 1,
+            position: 0,
             image: mary,
             title: "Mary Lagus",
             text: "Customer Manager",
@@ -26,9 +19,16 @@ export const TeamSectionData = {
         },
         fran: {
             position: 2,
-            image: otto,
-            title: "Otto Von Friedrich",
-            text: "CTO",
+            image: mavi,
+            title: "Mavi",
+            text: "Graphic Designer",
+            cssClass: "carousel-item",
+        },
+        alberto: {
+            position: 2,
+            image: alber,
+            title: "Alberto Carrasco",
+            text: "CEO",
             cssClass: "carousel-item",
         }
     }
