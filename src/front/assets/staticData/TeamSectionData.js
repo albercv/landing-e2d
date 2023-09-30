@@ -17,8 +17,8 @@ export const TeamSectionData = {
             text: "Customer Manager",
             cssClass: "carousel-item",
         },
-        fran: {
-            position: 2,
+        mavi: {
+            position: 1,
             image: mavi,
             title: "Mavi",
             text: "Graphic Designer",

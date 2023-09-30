@@ -43,7 +43,6 @@ export const Form = () => {
     }
 
     return (
-        <div className='contact-section-form-container'>
             <form ref={form} className='contact-section-form' onSubmit={handleSubmit(handleFormData)}>
                 <input type='text'
                     ref={customerName}
@@ -98,7 +97,7 @@ export const Form = () => {
                         required: true,
                         minLength: 20
                     })}
-                    className='contact-section-form-input text-area' />
+                    className='contact-section-form-text-area' />
                 {errors.contactText?.type && <p className='contat-form-error' >{t(`contactForm.messageError.${errors.contactText?.type}`)}</p>}
                 <div className='contact-section-form-submit'>
                     <ReCAPTCHA
@@ -122,6 +121,5 @@ export const Form = () => {
                     {errors.sendButton?.type && <p className='contat-form-error' >{t(`contactForm.sendError.${errors.sendButton?.type}`)}</p>}
                 </div>
             </form>
-        </div>
     )
 }
