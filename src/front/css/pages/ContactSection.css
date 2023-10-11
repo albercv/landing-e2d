@@ -54,6 +54,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 .contact-section-booking-button {
@@ -64,6 +65,11 @@
     align-items: center;
     border-radius: 8px;
     border: 2px solid #FFF;
+}
+
+.contact-section-booking-button:hover {
+    box-shadow: 2px 2px 2px #05B4BA;
+    text-shadow: 1px 1px 1px #05B4BA;
 }
 
 .contact-section-form-input,
