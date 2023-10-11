@@ -97,5 +97,14 @@
             "required": "¿Te estás haciendo el dificil? ¡Danos tu número!",
             "minLength": "¡No conozco un número de teléfono tan corto! ¡Recuerda el código del país!"
         }
+    },
+    "chatWindow": {
+        "greeting": "¡Hola! Soy la IA de E2D, todavía estoy en entrenamiento, aunque sé todo sobre este negocio y lo que hacemos, a veces puedo generar respuestas inventadas por mi cuenta. Como todavía estoy en prueba <span style='color: #cb6a00'>ÚSAME SOLO DE MANERA INFORMATIVA</span>. Esta conversación no será guardada de ninguna manera, ni siquiera reportada. Eso significa que todo lo que escribas aquí se perderá. Teniendo eso en mente, ¿cómo puedo ayudarte?",
+        "title": "¿En qué podemos ayudar hoy?",
+        "placeholder": "Escribe tu mensaje aquí...",
+        "typing": "E2D Trabajo en progreso",
+        "expand": "Expandir",
+        "minimize": "Minimizar",
+        "limitReached": "Has alcanzado el límite de mensajes con el chatbot. Para contactarnos, por favor utiliza el formulario de contacto en la parte inferior o alguno de los siguientes métodos:</br> <a style='color: #00c2cb' href='mailto:hello@evolve2digital.com'>Email</a></br> <a style='color: #00c2cb' href='https://wa.me/34605497639'>WhatsApp</a>"
     }
 }

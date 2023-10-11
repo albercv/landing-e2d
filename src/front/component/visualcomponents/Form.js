@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
@@ -46,7 +46,7 @@ export const Form = () => {
             <form ref={form} className='contact-section-form' onSubmit={handleSubmit(handleFormData)}>
                 <input type='text'
                     ref={customerName}
-                    name='name'
+                    name='customerName'
                     placeholder={t("contactForm.name")}
                     {...register('name', {
                         required: true,

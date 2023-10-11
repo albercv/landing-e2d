@@ -33,6 +33,10 @@
     /* 28.8px */
 }
 
+.aby {
+    backdrop-filter: contrast(0.85);
+}
+
 @media (min-width: 857px) {
     .partnership-section-images {
         display: flex;
@@ -40,12 +44,17 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
         width: 80%;
     }
 
     .partnership-section-image {
-        max-width: 100%;
+        height: 30vh;
+        width: 60%;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
         border-radius: 15px 70px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
     }
 
     .partnership-section-image-container {
@@ -112,8 +121,12 @@
 
     .partnership-section-image {
         max-height: 250px;
-        max-width: 50%;
+        max-width: 55%;
+        min-height: 180px;
         border-radius: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        cursor: pointer;
     }
 
     .partnership-section-image-title {

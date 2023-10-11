@@ -8,7 +8,7 @@ import { useLanguage } from '../../service/LanguageContextProvider.js';
 
 export const LanguageDropdown = () => {
 
-    const { t, i18n } = useTranslation("global");
+    const { i18n } = useTranslation("global");
 
     const { language, setNewLanguage } = useLanguage();
 
@@ -26,8 +26,8 @@ export const LanguageDropdown = () => {
         <div className='dropdown-container'>
             <img src={evaluateLanguage()} className='dropdown-flag navbar-buttons-section' alt="flag" />
             <select className='dropdown-select' id="language" value={language} onChange={(event) => handleOptionChange(event)}>
-                <option className='dropdown-select-option' value="EN">{t("navbar.dropdown_english")}</option>
-                <option className='dropdown-select-option' value="ES">{t("navbar.dropdown_spanish")}</option>
+                <option className='dropdown-select-option' value="EN">English</option>
+                <option className='dropdown-select-option' value="ES">Español</option>
             </select>
         </div>
     )
