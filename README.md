@@ -63,7 +63,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Accesing to GCP
+gcloud compute ssh --zone "us-east1-b" "INSTANCE_NAME" --project "PROJECT_NAME"
+in the project path
+git pull origin develop
+npm run build
+sudo rm -rf /var/www/html/build
+sudo mv build /var/www/html/
+sudo systemctl restart apache2 
+
 
 ### `npm run build` fails to minify
 

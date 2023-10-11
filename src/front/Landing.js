@@ -9,6 +9,8 @@ import { OurServices } from './pages/OurServices';
 import { Works } from './pages/Works';
 import { Partnership } from './pages/Partnership';
 import { ContactSection } from './pages/ContactSection';
+import { ChatWindow } from './component/visualcomponents/ChatWindow';
+import { MessagesContextProvider } from './service/ChatbotMessagesContextProvider';
 
 export const Landing = () => {
 
@@ -44,6 +46,9 @@ export const Landing = () => {
             <Partnership />
             <UnlockSection smallWindowSize={smallWindowSize} section="team" />
             <ContactSection />
+            <MessagesContextProvider>
+                <ChatWindow />
+            </MessagesContextProvider>
             <Footer />
         </>
     )
