@@ -67,6 +67,7 @@ Accesing to GCP
 gcloud compute ssh --zone "us-east1-b" "INSTANCE_NAME" --project "PROJECT_NAME"
 in the project path
 git pull origin develop
+npm install
 npm run build
 sudo rm -rf /var/www/html/build
 sudo mv build /var/www/html/

@@ -28,7 +28,7 @@ export const Partnership = () => {
           </a>
         </div>
         <div className='partnership-section-image-container'>
-          <a href='https://aby-food.onrender.com'>
+          <a href='https://www.abyfoods.fi'>
             <img className='partnership-section-image aby' src={third} alt="Logo Aby Food" />
             <p className='partnership-section-image-title'>Aby Food</p>
           </a>
