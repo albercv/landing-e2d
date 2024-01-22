@@ -113,7 +113,7 @@ whereas 428px is closer to the actual mobile width
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../assets/images/header_landing.png) no-repeat;
+    background: url(../assets/images/header_landing.webp) no-repeat;
     background-size: cover;
     background-position: 50%;
     z-index: -1;
