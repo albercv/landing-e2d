@@ -37,7 +37,6 @@ export const ChatWindow = () => {
     }
 
     useEffect(() => {
-        console.log('useEffect triggered');
         const greeting = {
             message: t("chatWindow.greeting"),
             sender: "E2D",
@@ -50,8 +49,6 @@ export const ChatWindow = () => {
         });
     }, [language, t]);
 
-    console.log(`messageNumber: ${messageNumber}`);
-
     useEffect(() => {
         if (messageNumber > limit) {
             const limitReached = {
@@ -59,7 +56,6 @@ export const ChatWindow = () => {
                 sender: "E2D",
                 direction: "incoming"
             }
-            console.log("useEffect triggered limit reached changing text");
             setMessages(prevMessages => {
                 const updatedMessages = [...prevMessages];
                 updatedMessages[updatedMessages.length - 1] = limitReached;
