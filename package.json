@@ -5,10 +5,15 @@
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
     "@emailjs/browser": "^3.11.0",
+    "@react-three/drei": "^9.41.2",
+    "@react-three/fiber": "^8.0.26",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "clsx": "^2.1.1",
     "i18next": "^23.4.6",
+    "mini-svg-data-uri": "^1.4.4",
+    "motion": "^12.4.7",
     "react": "^18.2.0",
     "react-calendly": "^4.1.1",
     "react-dom": "^18.2.0",
@@ -18,7 +23,10 @@
     "react-i18next": "^13.2.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "tailwind-merge": "^3.0.2",
+    "three": "^0.173.0",
+    "three-globe": "^2.41.12",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,5 +52,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "postcss": "^8.5.3",
+    "webpack": "^5.98.0",
+    "webpack-dev-server": "^5.2.0"
   }
 }
