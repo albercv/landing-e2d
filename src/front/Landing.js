@@ -42,7 +42,6 @@ export const Landing = () => {
             <Introduction />
             <UnlockSection smallWindowSize={smallWindowSize} section="unlock" />
             <OurServices />
-            <Works />
             <Partnership />
             <UnlockSection smallWindowSize={smallWindowSize} section="team" />
             <ContactSection />

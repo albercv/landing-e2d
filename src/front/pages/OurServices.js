@@ -36,12 +36,6 @@ export const OurServices = () => {
                 <div>
                     <ContactButton buttonClass='landing-introduction-booking-button booking-style-contact-button' buttonText={t("buttons.contact_help")} buttonType='NO_CALENDLY' showButton={true} />
                 </div>
-                <section>
-                    <div className='our-work-section'>
-                        <h1>{t("our_work.title")}</h1>
-                        <h6>{t("our_work.description")}</h6>
-                    </div>
-                </section>
             </div>
         </section>
     )
