@@ -1,14 +1,16 @@
 .partnership-section-image-container {
-  /* Ajusta estos valores a tus necesidades */
-  width: 12rem;      /* 192px */
-  height: 12rem;     /* 192px */
+    /* Ajusta estos valores a tus necesidades */
+    width: 12rem;
+    /* 192px */
+    height: 12rem;
+    /* 192px */
 
-  /* Centrado del contenedor */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    /* Centrado del contenedor */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .partnership-section-text-title {
@@ -23,7 +25,7 @@
 }
 
 .partnership-section-text-description {
-    color: #293039;
+    color: rgb(41, 48, 57);
     text-align: center;
     /* Body/L */
     font-family: Roboto;
@@ -52,6 +54,11 @@
 
 .aby {
     backdrop-filter: contrast(0.85);
+}
+
+.text-shadow {
+    background-color: #293039;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 @media (min-width: 857px) {
