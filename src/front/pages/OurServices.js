@@ -34,7 +34,7 @@ export const OurServices = () => {
                     <Card picture={check} text={t("our_services.planning")} />
                 </div>
                 <div>
-                    <ContactButton buttonClass='landing-introduction-booking-button booking-style-contact-button' buttonText={t("buttons.contact_help")} buttonType='NO_CALENDLY' showButton={true} />
+                    <ContactButton buttonClass='landing-introduction-booking-button booking-style-contact-button -translate-y-8' buttonText={t("buttons.contact_help")} buttonType='NO_CALENDLY' showButton={true} />
                 </div>
             </div>
         </section>
