@@ -6,16 +6,32 @@ import { Hamburger } from './component/visualcomponents/Hamburger';
 import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
 import { OurServices } from './pages/OurServices';
-import { Works } from './pages/Works';
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { Partnership } from './pages/Partnership';
 import { ContactSection } from './pages/ContactSection';
 import { ChatWindow } from './component/visualcomponents/ChatWindow';
 import { MessagesContextProvider } from './service/ChatbotMessagesContextProvider';
+import BlogList from './pages/BlogList'
+import BlogPost from './pages/Blog'
 
 export const Landing = () => {
-
     const desktopScreenMinimumSize = 856;
     const [smallWindowSize, setNewScreenSize] = useState({ width: window.innerWidth });
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '');
+            setTimeout(() => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 0);
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [location]);
 
     const renderViewSize = {
         "NavBar": NavBar,
@@ -26,29 +42,54 @@ export const Landing = () => {
         setNewScreenSize({ width: document.documentElement.clientWidth });
     };
 
-    const CurrentView = smallWindowSize.width > desktopScreenMinimumSize ? renderViewSize["NavBar"] : renderViewSize["Hamburger"];
-
     useEffect(() => {
         window.addEventListener('resize', displayWindowSize);
-
         return () => {
             window.removeEventListener('resize', displayWindowSize);
         };
     }, []);
 
-    return (
+    const MainContent = () => (
         <>
-            <CurrentView />
             <Introduction />
             <UnlockSection smallWindowSize={smallWindowSize} section="unlock" />
             <OurServices />
             <Partnership />
             <UnlockSection smallWindowSize={smallWindowSize} section="team" />
             <ContactSection />
-            <MessagesContextProvider>
-                <ChatWindow />
-            </MessagesContextProvider>
-            <Footer />
         </>
+    );
+
+    // Determine which navigation component to show
+    const NavigationComponent = smallWindowSize.width > desktopScreenMinimumSize ? NavBar : Hamburger;
+
+    return (
+        <div className="app-container">
+            {/* Navigation is now outside of Routes */}
+            <NavigationComponent />
+            <MessagesContextProvider>
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <MainContent />
+                            <ChatWindow />
+                        </>
+                    } />
+                    <Route path="/blog" element={
+                        <>
+                            <BlogList />
+                            <ChatWindow />
+                        </>
+                    } />
+                    <Route path="/blog/:slug" element={
+                        <>
+                            <BlogPost />
+                            <ChatWindow />
+                        </>
+                    } />
+                </Routes>
+                <Footer />
+            </MessagesContextProvider>
+        </div>
     )
 }
