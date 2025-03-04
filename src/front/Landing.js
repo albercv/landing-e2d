@@ -64,31 +64,31 @@ export const Landing = () => {
     const NavigationComponent = smallWindowSize.width > desktopScreenMinimumSize ? NavBar : Hamburger;
 
     return (
-        <div className="app-container">
+        <div className="app-container flex flex-col min-h-screen">
             {/* Navigation is now outside of Routes */}
             <NavigationComponent />
             <MessagesContextProvider>
+            <div className="flex-1">
                 <Routes>
                     <Route path="/" element={
                         <>
                             <MainContent />
-                            <ChatWindow />
                         </>
                     } />
                     <Route path="/blog" element={
                         <>
                             <BlogList />
-                            <ChatWindow />
                         </>
                     } />
                     <Route path="/blog/:slug" element={
                         <>
                             <BlogPost />
-                            <ChatWindow />
                         </>
                     } />
                 </Routes>
-                <Footer />
+                </div>
+                <ChatWindow />
+                <Footer className="mt-auto"/>
             </MessagesContextProvider>
         </div>
     )
