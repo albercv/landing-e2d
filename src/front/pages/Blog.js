@@ -49,7 +49,11 @@ const BlogPost = () => {
             {postContent.title}
           </h1>
 
-          <MediaContent media={post.media} title={postContent.title} id={post.id} />
+          <MediaContent 
+            media={post.media || { type: "image", url: post.image }} 
+            title={postContent.title} 
+            id={post.id} 
+          />
 
           <div className="text-gray-600 dark:text-gray-400 mb-8">
             {new Date(post.date).toLocaleDateString(i18n.language)} • {post.author || t("blog.unknownAuthor") || "Unknown"}
