@@ -1,9 +1,16 @@
 {
+    "blog": {
+        "latestPosts": "Latest Posts",
+        "readMore": "Read More",
+        "backToBlog": "Back to Blog",
+        "unknownAuthor": "Unknown Author",
+        "loading": "Loading"
+    },
     "introduction": {
         "unlock": "Unlock",
         "claimText": "Your ",
-        "future": "Business's Future.",
-        "introText": "Welcome to Evolve2Digital, a dynamic and forward-thinking tech company based in Wyoming with a relocated Spanish team. We specialize in leveraging the power of technology to drive business growth and success. Our team of experts offers cutting-edge web development and product strategy services tailored to transform your company. Experience the confidence and trust that comes with partnering with Evolve2Digital as we help you unlock your business's full potential."
+        "future": "Intelligent digital solutions",
+        "introText": "Evolve2Digital drives digital transformation with AI-powered intelligent automation and custom software solutions. We optimize processes, reduce costs, and create smart agents that enhance your company’s efficiency."
     },
     "navbar": {
         "aboutus": "About us",
@@ -14,7 +21,7 @@
         "dropdown_english": "English"
     },
     "buttons": {
-        "appointment": "Book an appoinment now",
+        "appointment": "AI-Powered Growth",
         "contact": "Contact us",
         "contact_help": "Contact us to help you"
     },
@@ -34,15 +41,15 @@
     "our_services": {
         "caption": "Solutions",
         "title": "Our services",
-        "description": "At Evolve2Digital, we know that the digital world can be overwhelming, which is why we offer a range of services designed to help your business succeed. From web development to product strategy, our team of experts is ready to help you unlock your potential and achieve your goals.",
-        "development": "Web Development",
-        "strategy": "Product Strategy",
-        "custom_dev": "Custom web development",
-        "ideation": "Product ideation",
-        "responsive": "Responsive design",
-        "research": "User research",
-        "optimization": "Performance optimization",
-        "planning": "Launch planning"
+        "description": "Empower your business with AI-driven automation and cutting-edge software solutions. At Evolve2Digital, we specialize in intelligent web development and business automation that helps you optimize processes, reduce costs, and scale efficiently. Let’s build the future of your company together!",
+        "development": "AI-Powered Web Development",
+        "strategy": "Business Automation & Strategy",
+        "custom_dev": "Scalable custom web applications",
+        "ideation": "Business Automation & Strategy",
+        "responsive": "AI-driven automation & process optimization",
+        "research": "Business Automation & Strategy",
+        "optimization": "High-performance cloud architecture",
+        "planning": "Business Automation & Strategy"
     },
     "our_work": {
         "title": "Our work",

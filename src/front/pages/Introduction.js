@@ -4,6 +4,9 @@ import '../css/LandingIntroduction.css'
 import headerImage from '../assets/images/header_landing.webp'
 import { ContactButton } from '../component/visualcomponents/ContactButton.js'
 import { useTranslation } from 'react-i18next'
+import { HeroHighlight, Highlight } from '../component/visualcomponents/cards/hero-highlight.js';
+import { motion } from 'framer-motion';
+
 
 
 export const Introduction = () => {
@@ -18,9 +21,12 @@ export const Introduction = () => {
             <div className='landing-introduction-block'>
                 <div className='landing-introduction-text'>
                     <p className='landing-introduction-text-title'>
-                        <span className='landing-introduction-text-title-evolve'>Evolve2Digital </span>
-                        <span className='landing-introduction-text-title-description'>{t("introduction.unlock")}</span> {t("introduction.claimText")}
-                        <span className='landing-introduction-text-title-future'>{t("introduction.future")}</span>
+                        <Highlight className="text-black dark:text-white inline-block">
+                            <span className='landing-introduction-text-title-evolve'>Evolve2Digital </span>
+                        </Highlight>
+                        <span className='landing-introduction-text-title-description'>
+                            <span className='landing-introduction-text-title-future'>{t("introduction.future")}</span>
+                        </span>
                     </p>
                     <p className='landing-introduction-text-description'>
                         {t("introduction.introText")}

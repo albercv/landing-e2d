@@ -1,9 +1,16 @@
 {
+    "blog": {
+        "latestPosts": "Últimas Publicaciones",
+        "readMore": "Leer Más",
+        "backToBlog": "Volver al Blog",
+        "unknownAuthor": "Autor Desconocido",
+        "loading": "Cargando"
+    },
     "introduction": {
         "unlock": "Libera",
         "claimText": "El ",
-        "future": "Futuro de tu Negocio",
-        "introText": "Bienvenido a Evolve2Digital, una empresa tecnológica dinámica y visionaria con sede en Wyoming y un equipo español trasladado. Nos especializamos en aprovechar el poder de la tecnología para impulsar el crecimiento y el éxito empresarial. Nuestro equipo de expertos ofrece servicios punteros en desarrollo web y estrategia de productos diseñados para transformar tu empresa. Experimenta la confianza y la seguridad que brinda asociarse con Evolve2Digital mientras te ayudamos a liberar todo el potencial de tu negocio."
+        "future": "Soluciones digitales inteligentes.",
+        "introText": "Evolve2Digital impulsa la transformación digital con soluciones de software personalizadas y automatización inteligente basada en IA. Optimizamos procesos, reducimos costos y creamos agentes inteligentes que potencian la eficiencia de tu empresa."
     },
     "navbar": {
         "aboutus": "Nosotros",
@@ -14,7 +21,7 @@
         "dropdown_english": "Inglés"
     },
     "buttons": {
-        "appointment": "Reserva tu cita ahora",
+        "appointment": "Tu negocio con IA",
         "contact": "Contáctanos",
         "contact_help": "Contáctanos y te ayudamos"
     },
@@ -34,15 +41,15 @@
     "our_services": {
         "caption": "Soluciones",
         "title": "Nuestros servicios",
-        "description": "En Evolve2Digital, sabemos que el mundo digital puede ser abrumador, por eso ofrecemos una variedad de servicios diseñados para ayudar a que tu negocio tenga éxito. Desde desarrollo web hasta estrategia de productos, nuestro equipo de expertos está listo para ayudarte a desbloquear tu potencial y alcanzar tus objetivos.",
-        "development": "Desarrollo web",
-        "strategy": "Estrategia de productos",
-        "custom_dev": "Desarrollo web personalizado",
-        "ideation": "Ideación de productos",
-        "responsive": "Diseño adaptable",
-        "research": "Investigación de usuarios",
-        "optimization": "Optimización de rendimiento",
-        "planning": "Planificación de lanzamiento"
+        "description": "Impulsa tu negocio con automatización basada en IA y soluciones de software de vanguardia. En Evolve2Digital, nos especializamos en desarrollo web inteligente y automatización empresarial para optimizar procesos, reducir costos y escalar de manera eficiente. ¡Construyamos juntos el futuro de tu empresa!",
+        "development": "Desarrollo Web Potenciado por IA",
+        "strategy": "Automatización y Estrategia Empresarial",
+        "custom_dev": "Aplicaciones web personalizadas y escalables",
+        "ideation": "Automatización y Estrategia Empresarial",
+        "responsive": "Automatización impulsada por IA y optimización de procesos",
+        "research": "Automatización y Estrategia Empresarial",
+        "optimization": "Arquitectura en la nube de alto rendimiento",
+        "planning": "Automatización y Estrategia Empresarial"
     },
     "our_work": {
         "title": "Nuestro trabajo",

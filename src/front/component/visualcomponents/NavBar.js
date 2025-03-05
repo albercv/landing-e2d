@@ -13,7 +13,8 @@ export const NavBar = () => {
     "introduction-section": t("navbar.aboutus"),
     "unlock-section": t("navbar.services"),
     "team-section": t("navbar.team"),
-    "contact-section": t("navbar.contact")
+    "contact-section": t("navbar.contact"),
+    "blog-page" : "Blog",
   };
 
   return (
