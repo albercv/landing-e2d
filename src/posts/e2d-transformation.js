@@ -3,7 +3,10 @@ import image from "../front/assets/images/blog/digital-transformation.jpg";
 
 const post = {
   id: "e2d-transformation",
-  image: image, // Usar la imagen importada directamente
+  media: {
+    type: "youtube",
+    url: "5AUitDG6iOc" // Ejemplo de ID de video de YouTube
+  },
   date: "2024-02-26",
   author: "E2D Team",
   // Contenido en inglés
@@ -67,44 +70,66 @@ const post = {
   ES: {
     title: "Transforma tu Estrategia de Marketing y Aumenta tus Beneficios",
     summary: "¿Te imaginas captando leads y conectando con potenciales clientes de manera automática, sin esfuerzo y con resultados medibles? Con la automatización en n8n, este sueño se convierte en realidad. Aprende cómo esta innovadora herramienta puede revolucionar tu negocio y potenciar áreas clave como desarrollo de software, automatizaciones, desarrollo web y la creación de páginas web de alto rendimiento, llevando la mejora de procesos, reducción de gastos y conseguir beneficios a niveles insospechados.",
-    content: `¿Por Qué n8n es Tu Mejor Aliado?
-n8n no es solo otra herramienta de automatización: es una solución revolucionaria que te conecta con el futuro del marketing digital. Su capacidad para integrar procesos y conectar diversas aplicaciones elimina barreras, permitiéndote:
+    content: `## ¿Por Qué n8n es Tu Mejor Aliado?
 
-Captar Leads de Forma Inteligente: Automatiza la recolección de datos y transforma visitantes en clientes potenciales de forma inmediata.
-Recopilar y Potenciar Datos: Extrae información clave, desde correos electrónicos hasta comportamientos de usuario, para una segmentación precisa.
-Lanzar Campañas Impactantes: Activa campañas de email marketing personalizadas que se disparan en el momento justo, creando experiencias inolvidables para tus prospectos.
+n8n no es solo otra herramienta de automatización: es una **solución revolucionaria** que te conecta con el futuro del marketing digital. Su capacidad para integrar procesos y conectar diversas aplicaciones elimina barreras, permitiéndote:
+
+### Capacidades Clave
+- **Captar Leads de Forma Inteligente**: Automatiza la recolección de datos y transforma visitantes en clientes potenciales de forma inmediata.
+- **Recopilar y Potenciar Datos**: Extrae información clave, desde correos electrónicos hasta comportamientos de usuario, para una segmentación precisa.
+- **Lanzar Campañas Impactantes**: Activa campañas de email marketing personalizadas que se disparan en el momento justo, creando experiencias inolvidables para tus prospectos.
+
 Esta herramienta actúa como el disparador emocional que impulsa a tus clientes a tomar acción, creando conexiones profundas y duraderas.
 
-La Estrategia Neuromarketing Detrás de n8n
+---
+
+## La Estrategia Neuromarketing Detrás de n8n
+
 El neuromarketing se basa en comprender y estimular las emociones y decisiones de compra de tus clientes. Al implementar n8n en tu estrategia, puedes:
 
-Generar Confianza y Credibilidad: Al automatizar procesos, ofreces a tus clientes una experiencia sin fricciones que refuerza tu profesionalidad.
-Crear Expectativa y Urgencia: Usa mensajes personalizados y oportunos que inviten a la acción inmediata, aprovechando la inmediatez que solo una campaña automatizada puede ofrecer.
-Fomentar la Identificación: Comunica de forma directa y emocional, haciendo que cada usuario sienta que la solución está hecha a su medida.
-Estos elementos no solo persuaden a tus prospectos, sino que además, fortalecen el posicionamiento SEO al incorporar repetidamente keywords esenciales como desarrollo de software, automatizaciones, desarrollo web, páginas web, mejora de procesos, reducción de gastos y conseguir beneficios.
+- **Generar Confianza y Credibilidad**: Al automatizar procesos, ofreces a tus clientes una experiencia sin fricciones que refuerza tu profesionalidad.
+- **Crear Expectativa y Urgencia**: Usa mensajes personalizados y oportunos que inviten a la acción inmediata, aprovechando la inmediatez que solo una campaña automatizada puede ofrecer.
+- **Fomentar la Identificación**: Comunica de forma directa y emocional, haciendo que cada usuario sienta que la solución está hecha a su medida.
 
-Integración Perfecta con los Servicios de E2D
-En E2D, entendemos que el éxito de tu negocio depende de una estrategia digital bien orquestada. Nuestros servicios de desarrollo de software y desarrollo web están diseñados para impulsar tu presencia online, mientras que nuestras automatizaciones optimizan cada proceso interno. Imagina tener una página web que no solo cautive a tus visitantes, sino que, mediante automatizaciones inteligentes, convierta cada visita en una oportunidad de negocio.
+Estos elementos no solo persuaden a tus prospectos, sino que además, fortalecen el posicionamiento SEO al incorporar repetidamente keywords esenciales como **desarrollo de software**, **automatizaciones**, **desarrollo web**, **páginas web**, **mejora de procesos**, **reducción de gastos** y **conseguir beneficios**.
 
-Nuestro enfoque integral se centra en:
+---
 
-Optimización de Procesos: Implementamos soluciones que mejoran la eficiencia y reducen gastos innecesarios.
-Estrategias Personalizadas: Diseñamos campañas de marketing que conectan emocionalmente con tu audiencia, logrando conseguir beneficios reales y medibles.
-Innovación Constante: Combinamos lo mejor del desarrollo web y automatizaciones para crear herramientas que potencian tu negocio en cada clic.
-Caso de Éxito: Automatización para la Captación de Leads
+## Integración Perfecta con los Servicios de E2D
+
+En **E2D**, entendemos que el éxito de tu negocio depende de una estrategia digital bien orquestada. Nuestros servicios de desarrollo de software y desarrollo web están diseñados para impulsar tu presencia online, mientras que nuestras automatizaciones optimizan cada proceso interno. 
+
+Imagina tener una página web que no solo cautive a tus visitantes, sino que, mediante automatizaciones inteligentes, convierta cada visita en una oportunidad de negocio.
+
+### Nuestro enfoque integral se centra en:
+
+1. **Optimización de Procesos**: Implementamos soluciones que mejoran la eficiencia y reducen gastos innecesarios.
+2. **Estrategias Personalizadas**: Diseñamos campañas de marketing que conectan emocionalmente con tu audiencia, logrando conseguir beneficios reales y medibles.
+3. **Innovación Constante**: Combinamos lo mejor del desarrollo web y automatizaciones para crear herramientas que potencian tu negocio en cada clic.
+
+---
+
+## Caso de Éxito: Automatización para la Captación de Leads
+
 Visualiza el siguiente escenario: lanzas un nuevo producto y necesitas captar la máxima atención. Con n8n, configuras un flujo automatizado que:
 
-Recolecta Datos en Tiempo Real: Cada interacción en tu sitio web se transforma en una oportunidad, recogiendo datos valiosos de tus visitantes.
-Segmenta tu Audiencia Inteligentemente: La información recopilada permite segmentar a tus prospectos según intereses y comportamientos, creando perfiles precisos.
-Desata Campañas de Marketing Emocionales: Con un simple clic, envía campañas personalizadas y atractivas que conectan y persuaden a la acción inmediata.
+### Proceso Automatizado
+1. **Recolecta Datos en Tiempo Real**: Cada interacción en tu sitio web se transforma en una oportunidad, recogiendo datos valiosos de tus visitantes.
+2. **Segmenta tu Audiencia Inteligentemente**: La información recopilada permite segmentar a tus prospectos según intereses y comportamientos, creando perfiles precisos.
+3. **Desata Campañas de Marketing Emocionales**: Con un simple clic, envía campañas personalizadas y atractivas que conectan y persuaden a la acción inmediata.
+
 Este proceso, respaldado por técnicas de neuromarketing, no solo mejora la captación de leads, sino que también maximiza el retorno de inversión, permitiéndote conseguir beneficios significativos mientras optimizas cada aspecto del desarrollo web.
 
-Conclusión: Tu Camino Hacia el Éxito Digital
-La automatización con n8n es la herramienta que necesitas para transformar tu estrategia digital y alcanzar nuevos niveles de eficiencia y rentabilidad. En E2D, fusionamos el desarrollo de software con técnicas avanzadas de automatizaciones y desarrollo web para ofrecerte soluciones integrales que garantizan la mejora de procesos y la reducción de gastos.
+---
 
-Es momento de actuar y cambiar la manera en que interactúas con tu audiencia. Desbloquea el potencial de tu negocio, optimiza tus estrategias de marketing y comienza a conseguir beneficios de forma inmediata.
+## Conclusión: Tu Camino Hacia el Éxito Digital
 
-¡Contáctanos en E2D y da el primer paso hacia una transformación digital que cautiva, persuade y convierte!`
+La automatización con **n8n** es la herramienta que necesitas para transformar tu estrategia digital y alcanzar nuevos niveles de eficiencia y rentabilidad. En **E2D**, fusionamos el desarrollo de software con técnicas avanzadas de automatizaciones y desarrollo web para ofrecerte soluciones integrales que garantizan la mejora de procesos y la reducción de gastos.
+
+### _Es momento de actuar_
+Cambia la manera en que interactúas con tu audiencia. Desbloquea el potencial de tu negocio, optimiza tus estrategias de marketing y comienza a conseguir beneficios de forma inmediata.
+
+📩 **¡Contáctanos en E2D y da el primer paso hacia una transformación digital que cautiva, persuade y convierte!**`
   }
 };
 
