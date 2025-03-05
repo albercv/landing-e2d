@@ -2,7 +2,7 @@
 import image from "../front/assets/images/blog/digital-transformation.jpg";
 
 const post = {
-  id: "n8n-email-automation",
+  id: "ai-solutions",
   media: {
     type: "youtube",
     url: "S8_A15WK3NM" // Ejemplo de ID de video de YouTube

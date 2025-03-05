@@ -2,7 +2,7 @@
 import image from "../front/assets/images/blog/aby.png";
 
 const post = {
-  id: "custom-business-web",
+  id: "digital-evolution",
   image: image,
   date: "2024-02-26",
   author: "E2D Team",
