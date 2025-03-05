@@ -2,8 +2,6 @@ import React from 'react'
 import '../css/pages/Partnership.css'
 import third from '../assets/images/aby_logo.png'
 import { useTranslation } from 'react-i18next'
-import burntimeout from '../assets/images/burn_logo.png'
-import hkc from '../assets/images/hkc_logo.png'
 import { PinContainer } from '../components/3d-pin'
 
 export const Partnership = () => {
