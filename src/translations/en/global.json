@@ -1,4 +1,11 @@
 {
+    "blog": {
+        "latestPosts": "Latest Posts",
+        "readMore": "Read More",
+        "backToBlog": "Back to Blog",
+        "unknownAuthor": "Unknown Author",
+        "loading": "Loading"
+    },
     "introduction": {
         "unlock": "Unlock",
         "claimText": "Your ",

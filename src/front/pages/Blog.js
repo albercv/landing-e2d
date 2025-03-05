@@ -2,48 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import MediaContent from "../components/MediaContent.js";
 import posts from "../../posts";
-
-const MediaContent = ({ media, title, id }) => {
-  if (!media) return null;
-
-  if (media.type === "youtube") {
-    return (
-      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }} className="my-6">
-        <iframe
-          src={`https://www.youtube.com/embed/${media.url}`}
-          title={title}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            borderRadius: '0.5rem'
-          }}
-        />
-      </div>
-    );
-  }
-
-  if (media.type === "image") {
-    return (
-      <img
-        src={media.url}
-        alt={title}
-        className="w-full h-auto max-h-96 object-cover my-6 rounded-lg"
-        onError={(e) => {
-          console.error(`Failed to load image for post: ${id}`);
-          e.target.src = '/assets/images/placeholder.jpg';
-        }}
-      />
-    );
-  }
-
-  return null;
-};
 
 const BlogPost = () => {
   const { slug } = useParams();

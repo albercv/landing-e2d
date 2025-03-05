@@ -1,4 +1,11 @@
 {
+    "blog": {
+        "latestPosts": "Últimas Publicaciones",
+        "readMore": "Leer Más",
+        "backToBlog": "Volver al Blog",
+        "unknownAuthor": "Autor Desconocido",
+        "loading": "Cargando"
+    },
     "introduction": {
         "unlock": "Libera",
         "claimText": "El ",

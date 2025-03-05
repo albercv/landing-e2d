@@ -2,6 +2,7 @@ import posts from "../../posts";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import MediaContent from "../components/MediaContent";
 
 const BlogList = () => {
   const { t, i18n } = useTranslation("global");
@@ -25,14 +26,11 @@ const BlogList = () => {
               className="block hover:shadow-lg transition-shadow duration-300"
             >
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col">
-                <img
-                  src={post.image}
-                  alt={postContent.title}
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    console.error(`Failed to load image for post: ${post.id}`);
-                    e.target.src = '/assets/images/placeholder.jpg';
-                  }}
+                <MediaContent 
+                  media={post.media || { type: "image", url: post.image }} 
+                  title={postContent.title} 
+                  id={post.id}
+                  isPreview={true}
                 />
                 <div className="p-4 flex-grow">
                   <h2 className="text-xl font-bold">{postContent.title}</h2>
