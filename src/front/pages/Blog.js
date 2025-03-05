@@ -61,7 +61,7 @@ const BlogPost = () => {
   }, [slug]);
 
   if (!post) {
-    return <div className="pt-[200px]">{t("common.loading") || "Loading..."}...</div>;
+    return <div className="pt-20 md:pt-32">{t("common.loading") || "Loading..."}...</div>;
   }
 
   const postContent = post[currentLanguage] || post["EN"] || post["en"] || {};
@@ -75,8 +75,8 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="landing-introduction pt-[200px]">
-      <div className="container mx-auto px-4 py-16">
+    <div className="landing-introduction">
+      <div className="container mx-auto px-4 pt-16 md:pt-24">
         <Link
           to="/blog"
           className="inline-block mb-8 text-blue-600 dark:text-blue-400 hover:underline"
