@@ -9,6 +9,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transition: width 0.3s, height 0.3s;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .textTitle {
@@ -17,11 +18,11 @@
 }
 
 .chat-window.expanded {
-    min-width: 300px;
-    max-width: 350px;
-    width: 350px;
-    height: 450px;
-    max-height: 450px;
+    min-width: 350px;
+    max-width: 400px;
+    width: 400px;
+    height: 550px;
+    max-height: 550px;
     bottom: 40px;
     z-index: 1000;
 }
@@ -35,11 +36,24 @@
 /* Add styles for the chat container to enable scrolling */
 .cs-chat-container {
     height: calc(100% - 50px) !important;
-    max-height: 400px !important;
+    max-height: 500px !important;
+    overflow: hidden !important;
 }
 
 .cs-message-list {
     overflow-y: auto !important;
+    height: 100% !important;
+    padding-right: 5px !important;
+}
+
+/* Prevent scroll propagation */
+.cs-message-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cs-message-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
 
 .window-header {

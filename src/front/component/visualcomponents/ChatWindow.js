@@ -7,8 +7,13 @@ import { useLanguage } from "../../service/LanguageContextProvider";
 import { useMessagesCounter } from "../../service/ChatbotMessagesContextProvider";
 import { v4 as uuidv4 } from 'uuid';
 
+// Update the webhookUrl to use the current hostname
 export const ChatWindow = () => {
-    const webhookUrl = "http://localhost:5678/webhook/userMessage";
+    // Get the current hostname and protocol for the webhook URL
+    const protocol = window.location.protocol;
+    const hostname = window.location.hostname;
+    const webhookUrl = `${protocol}//${hostname}:5678/webhook/userMessage`;
+    
     const limit = process.env.REACT_APP_CHATBOT_LIMIT;
     const webhookUser = process.env.REACT_APP_WEBHOOK_USER;
     const webhookPassword = process.env.REACT_APP_WEBHOOK_PASSWORD;
@@ -150,7 +155,7 @@ export const ChatWindow = () => {
     };
 
     const processResponse = (data) => {
-        let newText = urlify(data.output);
+        let newText = formatMessage(data.output);
 
         setMessages(prevMessages => [
             ...prevMessages, 
@@ -163,12 +168,26 @@ export const ChatWindow = () => {
         setTyping(false);
     };
 
-    const urlify = (text) => {
-        var urlRegex = /(https?:\/\/[^\s]+)/g;
-        return text.replace(urlRegex, function (url) {
-            return '<a href="' + url + '">' + url + '</a>';
-        });
+    const formatMessage = (text) => {
+        // Format email links
+        text = text.replace(/\[([^\]]+)\]\(mailto:([^)]+)\)/g, '<a href="mailto:$2" target="_blank">$1</a>');
+        
+        // Format WhatsApp links
+        text = text.replace(/\[([^\]]+)\]\(https:\/\/wa\.me\/([^)]+)\)/g, '<a href="https://wa.me/$2" target="_blank">$1</a>');
+        
+        // Format regular links
+        text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+        
+        // Format bold text
+        text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        
+        // Format line breaks
+        text = text.replace(/\n/g, '<br>');
+        
+        return text;
     };
+
+    // Remove or replace the old urlify function with the more comprehensive formatMessage function
 
     return (
         <MainContainer>
