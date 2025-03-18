@@ -4,60 +4,74 @@
     right: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 1) ;
+    background: rgba(255, 255, 255, 1);
     color: #00c2cb;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transition: width 0.3s, height 0.3s;
-  }
+    z-index: 1000;
+}
 
-  .textTitle {
+.textTitle {
     text-align: left;
     padding-right: 10px;
-  }
-  
-  .chat-window.expanded {
+}
+
+.chat-window.expanded {
     min-width: 300px;
-    max-width: 600px;
-    min-height: 200px;
+    max-width: 350px;
+    width: 350px;
+    height: 450px;
+    max-height: 450px;
     bottom: 40px;
-    z-index: 1;
-  }
-  
-  .chat-window.minimized {
+    z-index: 1000;
+}
+
+.chat-window.minimized {
     width: 360px;
     height: 40px;
-  }
-  
-  .window-header {
+    z-index: 1000;
+}
+
+/* Add styles for the chat container to enable scrolling */
+.cs-chat-container {
+    height: calc(100% - 50px) !important;
+    max-height: 400px !important;
+}
+
+.cs-message-list {
+    overflow-y: auto !important;
+}
+
+.window-header {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
     margin: 3px;
     background-color: #333333;
-  }
+}
 
-  .expandButton {
+.expandButton {
     cursor: pointer;
     padding: 2px 6px;
     border-radius: 10px;
-  }
+}
 
-  .expandButton:hover{
+.expandButton:hover {
     background-color: #F5A22F;
     color: #DE1FA1;
     transition: all 150ms;
-  }
+}
 
-  @media (max-width: 414px) {
+@media (max-width: 414px) {
+    .chat-window {
+        right: 10px;
+        bottom: 10px;
+    }
     
-  }
-  
-  /* .window-content {
-    width: calc(100% - 7px);
-    height: calc(100% - 40px);
-    overflow-y: auto;
-    border-radius: 10px;
-    background-color: rgb(51, 51, 51, .7);
-    display: flex;
-    margin: 3px;
-  } */
+    .chat-window.expanded {
+        width: 90%;
+        max-width: 350px;
+        height: 400px;
+        max-height: 400px;
+    }
+}

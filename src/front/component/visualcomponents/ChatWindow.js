@@ -10,6 +10,8 @@ import { v4 as uuidv4 } from 'uuid';
 export const ChatWindow = () => {
     const webhookUrl = "http://localhost:5678/webhook/userMessage";
     const limit = process.env.REACT_APP_CHATBOT_LIMIT;
+    const webhookUser = process.env.REACT_APP_WEBHOOK_USER;
+    const webhookPassword = process.env.REACT_APP_WEBHOOK_PASSWORD;
 
     const { t } = useTranslation("global");
     const { language } = useLanguage();
@@ -99,7 +101,7 @@ export const ChatWindow = () => {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": "Basic " + btoa("web:We2Digital@alber")
+                        "Authorization": "Basic " + btoa(`${webhookUser}:${webhookPassword}`)
                     },
                     body: JSON.stringify({
                         sessionId: sessionId,
