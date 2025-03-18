@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import '../../css/visualcomponents/LinksList.css'
 
 export const NavBarLinksList = ({ links }) => {
     const location = useLocation();
+    const { t } = useTranslation("global");
 
     const handleNavigation = (e, linkKey) => {
         if (linkKey === "blog-page") return; // Let blog links handle normally
@@ -27,7 +29,7 @@ export const NavBarLinksList = ({ links }) => {
                 if (linkKey === "blog-page") {
                     return (
                         <li key={linkKey} className='navbar-link-text'>
-                            <Link to="/blog">{links[linkKey]}</Link>
+                            <Link to="/blog">{t(links[linkKey])}</Link>
                         </li>
                     );
                 }
@@ -38,7 +40,7 @@ export const NavBarLinksList = ({ links }) => {
                             href={`/#${linkKey}`}
                             onClick={(e) => handleNavigation(e, linkKey)}
                         >
-                            {links[linkKey]}
+                            {t(links[linkKey])}
                         </a>
                     </li>
                 );
