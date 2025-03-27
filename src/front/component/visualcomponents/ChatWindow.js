@@ -9,14 +9,11 @@ import { v4 as uuidv4 } from 'uuid';
 
 // Update the webhookUrl to use the current hostname
 export const ChatWindow = () => {
-    // Get the current hostname and protocol for the webhook URL
-    const protocol = window.location.protocol;
-    const hostname = window.location.hostname;
-    const webhookUrl = `${protocol}//${hostname}:5678/webhook/userMessage`;
-    
-    const limit = process.env.REACT_APP_CHATBOT_LIMIT;
-    const webhookUser = process.env.REACT_APP_WEBHOOK_USER;
-    const webhookPassword = process.env.REACT_APP_WEBHOOK_PASSWORD;
+    // Use the environment variable for the webhook URL instead of constructing it
+    const webhookUrl = process.env.REACT_APP_WEBHOOK_URL || "https://api.evolve2digital.com/webhook/userMessage";
+    const limit = process.env.REACT_APP_CHATBOT_LIMIT || 15;
+    const webhookUser = process.env.REACT_APP_WEBHOOK_USER || "e2dWeb";
+    const webhookPassword = process.env.REACT_APP_WEBHOOK_PASSWORD || "evolve2digital";
 
     const { t } = useTranslation("global");
     const { language } = useLanguage();
@@ -98,9 +95,11 @@ export const ChatWindow = () => {
     const sendMessageToWebhook = async (message) => {
         if (messageNumber <= limit) {
             try {
-                // Add timeout to fetch using AbortController
+                // Increase timeout to 15 seconds
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+                const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+                
+                console.log("Sending message to webhook:", webhookUrl);
                 
                 const response = await fetch(webhookUrl, {
                     method: "POST",
@@ -118,21 +117,22 @@ export const ChatWindow = () => {
                 clearTimeout(timeoutId);
 
                 if (!response.ok) {
+                    console.error("Webhook response not OK:", response.status);
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
 
                 const data = await response.json();
                 processResponse(data);
             } catch (error) {
-                console.error("Error sending message to webhook:", error);
+                console.error("Error sending message to webhook:", error, webhookUrl);
                 
-                // Different error message based on error type
-                let errorMessage = "Lo siento, ha ocurrido un error al procesar tu mensaje. Por favor, inténtalo de nuevo más tarde.";
+                // Use the translated error messages
+                let errorMessage = t("chatWindow.errorGeneral");
                 
                 if (error.name === 'AbortError') {
-                    errorMessage = "La conexión ha tardado demasiado tiempo. Por favor, verifica tu conexión a internet e inténtalo de nuevo.";
+                    errorMessage = t("chatWindow.errorTimeout");
                 } else if (error.message.includes('Failed to fetch')) {
-                    errorMessage = "No se pudo conectar al servidor. El servicio puede estar temporalmente no disponible.";
+                    errorMessage = t("chatWindow.errorConnection");
                 }
                 
                 setMessages(prevMessages => [
