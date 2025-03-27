@@ -106,12 +106,15 @@
         }
     },
     "chatWindow": {
-        "greeting": "¡Hola! Soy la IA de E2D, todavía estoy en entrenamiento, aunque sé todo sobre este negocio y lo que hacemos, a veces puedo generar respuestas inventadas por mi cuenta. Como todavía estoy en prueba <span style='color: #cb6a00'>ÚSAME SOLO DE MANERA INFORMATIVA</span>. Esta conversación no será guardada de ninguna manera, ni siquiera reportada. Eso significa que todo lo que escribas aquí se perderá. Teniendo eso en mente, ¿cómo puedo ayudarte?",
+        "greeting": "¡Hola! 👋 \nSoy el Asistente de IA de E2D, estoy aquí para ayudarte con todo lo relacionado con automatización empresarial, soluciones impulsadas por IA y desarrollo de software.\n\n✅ Pregúntame sobre:\n\n- Cómo podemos automatizar tus procesos empresariales 🤖\n- Soluciones potenciadas por IA adaptadas a tus necesidades 🚀\n- Precios, tiempos de implementación y detalles del servicio 💡\n- Cómo contactarnos o programar una reunión 📅",
         "title": "¿En qué podemos ayudar hoy?",
         "placeholder": "Escribe tu mensaje aquí...",
         "typing": "E2D Trabajo en progreso",
         "expand": "Expandir",
         "minimize": "Minimizar",
-        "limitReached": "Has alcanzado el límite de mensajes con el chatbot. Para contactarnos, por favor utiliza el formulario de contacto en la parte inferior o alguno de los siguientes métodos:</br> <a style='color: #00c2cb' href='mailto:hello@evolve2digital.com'>Email</a></br> <a style='color: #00c2cb' href='https://wa.me/34605497639'>WhatsApp</a>"
+        "limitReached": "Has alcanzado el límite de mensajes con el chatbot. Para contactarnos, por favor utiliza el formulario de contacto en la parte inferior o alguno de los siguientes métodos:</br> <a style='color: #00c2cb' href='mailto:hello@evolve2digital.com'>Email</a></br> <a style='color: #00c2cb' href='https://wa.me/34605497639'>WhatsApp</a>",
+        "errorGeneral": "Lo siento, ha ocurrido un error al procesar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+        "errorTimeout": "La conexión ha tardado demasiado tiempo. Por favor, verifica tu conexión a internet e inténtalo de nuevo.",
+        "errorConnection": "No se pudo conectar al servidor. El servicio puede estar temporalmente no disponible."
     }
 }

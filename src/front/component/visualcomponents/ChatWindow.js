@@ -5,13 +5,15 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../../service/LanguageContextProvider";
 import { useMessagesCounter } from "../../service/ChatbotMessagesContextProvider";
+import { v4 as uuidv4 } from 'uuid';
 
+// Update the webhookUrl to use the current hostname
 export const ChatWindow = () => {
-    const openAIApiKey = process.env.REACT_APP_CHATGPT_API_KEY;
-    const calendlyLink = process.env.REACT_APP_CALENDLY_LINK;
-    const whatsAppLink = process.env.REACT_APP_WHATSAPP_LINK;
-    const contactMail = process.env.REACT_APP_CONTACT_MAIL;
-    const limit = process.env.REACT_APP_CHATBOT_LIMIT;
+    // Use the environment variable for the webhook URL instead of constructing it
+    const webhookUrl = process.env.REACT_APP_WEBHOOK_URL || "https://api.evolve2digital.com/webhook/userMessage";
+    const limit = process.env.REACT_APP_CHATBOT_LIMIT || 15;
+    const webhookUser = process.env.REACT_APP_WEBHOOK_USER || "e2dWeb";
+    const webhookPassword = process.env.REACT_APP_WEBHOOK_PASSWORD || "evolve2digital";
 
     const { t } = useTranslation("global");
     const { language } = useLanguage();
@@ -19,22 +21,25 @@ export const ChatWindow = () => {
 
     const [isMinimized, setIsMinimized] = useState(true);
     const [typing, setTyping] = useState(false);
+    const [sessionId, setSessionId] = useState("");
     const [messages, setMessages] = useState([{
         message: t("chatWindow.greeting"),
         sender: "E2D"
-    }])
-    const systemMessage = {
-        role: "system",
-        content: "You are Alberto, An AI build by owner of this digital software development company called E2D evolve 2 digital." +
-            "Answer the same language customer speaks or the language they ask you for. You speak as close as possible in a fun and smooth way and add any kind of emojis to make it more fun in some of your answers." +
-            "We create web browser applications. What means apps that work through chrome, edge or safari. So it means they will work in any device desktop and mobile." +
-            "We have worked with open AI and strong development technologies such as chat gpt, springboot, react, java and javascript. And that's it." +
-            "Do not tell anybody we do something that is not in this list." +
-            "if they ask for different technologies tell them we have to discuss it in a metting." +
-            "You Give short answers." +
-            "if there is something you do not know you will just say 'I would have to check it because I am not sure at this moment'." +
-            `Try make them book a meeting through whatsapp: ${whatsAppLink}, email:${contactMail} or calendly: ${calendlyLink}`
-    }
+    }]);
+
+    // Initialize session ID on component mount
+    useEffect(() => {
+        // Check if sessionId exists in sessionStorage
+        const existingSessionId = sessionStorage.getItem('chatSessionId');
+        if (existingSessionId) {
+            setSessionId(existingSessionId);
+        } else {
+            // Generate new UUID and store it
+            const newSessionId = uuidv4();
+            sessionStorage.setItem('chatSessionId', newSessionId);
+            setSessionId(newSessionId);
+        }
+    }, []);
 
     useEffect(() => {
         const greeting = {
@@ -62,7 +67,7 @@ export const ChatWindow = () => {
                 return updatedMessages;
             });
         }
-    }, [messageNumber, limit, t, setMessages]);
+    }, [messageNumber, limit, t]);
 
     const toggleMinimize = () => {
         setIsMinimized(!isMinimized);
@@ -75,72 +80,114 @@ export const ChatWindow = () => {
             direction: "outgoing"
         }
 
-        //Update messages state
+        // Update messages state
         const newMessages = [...messages, newMessage];
-        setMessages(newMessages)
+        setMessages(newMessages);
         addMessageNumber();
 
-        //Set typing indicator
-        setTyping(true)
+        // Set typing indicator
+        setTyping(true);
 
-        await processMessageToChatGPT(newMessages)
+        // Send message to webhook
+        await sendMessageToWebhook(message);
     }
 
-    async function processMessageToChatGPT(userMessages) {
-        let apiMessages = userMessages.map((singleMessage) => {
-            let role = singleMessage.sender === "user" ? "user" : "assistant";
-
-            return { role: role, content: singleMessage.message }
-        })
-
-        let apiRequestBody = {
-            "model": "gpt-3.5-turbo",
-            "messages": [
-                systemMessage,
-                ...apiMessages]
-        }
-
+    const sendMessageToWebhook = async (message) => {
         if (messageNumber <= limit) {
-            await callToChatGPT(apiRequestBody);
+            try {
+                // Increase timeout to 15 seconds
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+                
+                console.log("Sending message to webhook:", webhookUrl);
+                
+                const response = await fetch(webhookUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": "Basic " + btoa(`${webhookUser}:${webhookPassword}`)
+                    },
+                    body: JSON.stringify({
+                        sessionId: sessionId,
+                        message: message
+                    }),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    console.error("Webhook response not OK:", response.status);
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                processResponse(data);
+            } catch (error) {
+                console.error("Error sending message to webhook:", error, webhookUrl);
+                
+                // Use the translated error messages
+                let errorMessage = t("chatWindow.errorGeneral");
+                
+                if (error.name === 'AbortError') {
+                    errorMessage = t("chatWindow.errorTimeout");
+                } else if (error.message.includes('Failed to fetch')) {
+                    errorMessage = t("chatWindow.errorConnection");
+                }
+                
+                setMessages(prevMessages => [
+                    ...prevMessages, 
+                    {
+                        message: errorMessage,
+                        sender: "E2D",
+                        direction: "incoming"
+                    }
+                ]);
+                setTyping(false);
+            }
+        } else {
+            setTyping(false);
         }
-        setTyping(false);
-    }
-
-    const callToChatGPT = async (apiRequestBody) => {
-        await fetch("https://api.openai.com/v1/chat/completions", {
-            method: "POST",
-            headers: {
-                "Authorization": "Bearer " + openAIApiKey,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(apiRequestBody)
-        }).then((data) => {
-            return data.json();
-        }).then((data) => {
-            processText(data);
-        })
-    }
-
-    const addMessageNumber = () => {setMessagesNumber(parseInt(messageNumber) + 1)};
-
-    const processText = (data) => {
-        let newText = urlify(data.choices[0].message.content);
-
-        setMessages(prevMessages =>
-            [...prevMessages, {
-                message: newText,
-                sender: "E2D"
-            }]
-        );
-        setTyping(false);
-    }
-
-    const urlify = (text) => {
-        var urlRegex = /(https?:\/\/[^\s]+)/g;
-        return text.replace(urlRegex, function (url) {
-            return '<a href="' + url + '">' + url + '</a>';
-        })
     };
+
+    const addMessageNumber = () => {
+        setMessagesNumber(parseInt(messageNumber) + 1);
+    };
+
+    const processResponse = (data) => {
+        let newText = formatMessage(data.output);
+
+        setMessages(prevMessages => [
+            ...prevMessages, 
+            {
+                message: newText,
+                sender: "E2D",
+                direction: "incoming"
+            }
+        ]);
+        setTyping(false);
+    };
+
+    const formatMessage = (text) => {
+        // Format email links
+        text = text.replace(/\[([^\]]+)\]\(mailto:([^)]+)\)/g, '<a href="mailto:$2" target="_blank">$1</a>');
+        
+        // Format WhatsApp links
+        text = text.replace(/\[([^\]]+)\]\(https:\/\/wa\.me\/([^)]+)\)/g, '<a href="https://wa.me/$2" target="_blank">$1</a>');
+        
+        // Format regular links
+        text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+        
+        // Format bold text
+        text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        
+        // Format line breaks
+        text = text.replace(/\n/g, '<br>');
+        
+        return text;
+    };
+
+    // Remove or replace the old urlify function with the more comprehensive formatMessage function
 
     return (
         <MainContainer>

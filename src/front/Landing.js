@@ -3,6 +3,7 @@ import './css/Landing.css';
 import { Introduction } from './pages/Introduction';
 import { NavBar } from './component/visualcomponents/NavBar';
 import { Hamburger } from './component/visualcomponents/Hamburger';
+import { useTranslation } from 'react-i18next';
 import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
 import { OurServices } from './pages/OurServices';
@@ -18,6 +19,14 @@ export const Landing = () => {
     const desktopScreenMinimumSize = 856;
     const [smallWindowSize, setNewScreenSize] = useState({ width: window.innerWidth });
     const location = useLocation();
+    const { t } = useTranslation();
+    const linksList = {
+        "introduction-section": t("navbar.aboutus"),
+        "unlock-section": t("navbar.services"),
+        "team-section": t("navbar.team"),
+        "contact-section": t("navbar.contact"),
+        "blog-page": "Blog",
+    };
 
     useEffect(() => {
         if (location.hash) {
@@ -66,7 +75,7 @@ export const Landing = () => {
     return (
         <div className="app-container flex flex-col min-h-screen">
             {/* Navigation is now outside of Routes */}
-            <NavigationComponent />
+            <NavigationComponent linksList={linksList} />
             <MessagesContextProvider>
             <div className="flex-1">
                 <Routes>
