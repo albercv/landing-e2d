@@ -157,11 +157,11 @@ const LeadForm = () => {
       <div className="benefits">
         <h4>🎯 Lo que aprenderás:</h4>
         <ul>
-          <li>Cómo automatizar tareas repetitivas con IA</li>
-          <li>Herramientas específicas para cada tipo de trabajo</li>
-          <li>Estrategias probadas para optimizar tu tiempo</li>
-          <li>Casos de uso reales y ejemplos prácticos</li>
-          <li>Plantillas listas para usar</li>
+          <li>✅ Cómo automatizar tareas repetitivas con IA</li>
+          <li>✅ Herramientas específicas para cada tipo de trabajo</li>
+          <li>✅ Estrategias probadas para optimizar tu tiempo</li>
+          <li>✅ Casos de uso reales y ejemplos prácticos</li>
+          <li>✅ Plantillas listas para usar</li>
         </ul>
       </div>
     </div>
