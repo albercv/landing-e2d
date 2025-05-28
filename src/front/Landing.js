@@ -7,7 +7,8 @@ import { useTranslation } from 'react-i18next';
 import { UnlockSection } from './pages/UnlockSection';
 import { Footer } from './pages/Footer';
 import { OurServices } from './pages/OurServices';
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { LeadMagnetPage } from './pages/LeadMagnetPage'; // Import the new page
 import { Partnership } from './pages/Partnership';
 import { ContactSection } from './pages/ContactSection';
 import { ChatWindow } from './component/visualcomponents/ChatWindow';
@@ -74,7 +75,6 @@ export const Landing = () => {
 
     return (
         <div className="app-container flex flex-col min-h-screen">
-            {/* Navigation is now outside of Routes */}
             <NavigationComponent linksList={linksList} />
             <MessagesContextProvider>
             <div className="flex-1">
@@ -94,6 +94,8 @@ export const Landing = () => {
                             <BlogPost />
                         </>
                     } />
+                    {/* Add the new route here */}
+                    <Route path="/download-5-pasos-para-ahorrar-40-horas" element={<LeadMagnetPage />} />
                 </Routes>
                 </div>
                 <ChatWindow />
