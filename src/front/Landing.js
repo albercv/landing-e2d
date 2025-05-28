@@ -72,10 +72,13 @@ export const Landing = () => {
 
     // Determine which navigation component to show
     const NavigationComponent = smallWindowSize.width > desktopScreenMinimumSize ? NavBar : Hamburger;
+    
+    // Check if we're on the lead magnet page
+    const isLeadMagnetPage = location.pathname === '/download-5-pasos-para-ahorrar-40-horas';
 
     return (
         <div className="app-container flex flex-col min-h-screen">
-            <NavigationComponent linksList={linksList} />
+            {!isLeadMagnetPage && <NavigationComponent linksList={linksList} />}
             <MessagesContextProvider>
             <div className="flex-1">
                 <Routes>
@@ -94,12 +97,11 @@ export const Landing = () => {
                             <BlogPost />
                         </>
                     } />
-                    {/* Add the new route here */}
                     <Route path="/download-5-pasos-para-ahorrar-40-horas" element={<LeadMagnetPage />} />
                 </Routes>
                 </div>
-                <ChatWindow />
-                <Footer className="mt-auto"/>
+                {!isLeadMagnetPage && <ChatWindow />}
+                {!isLeadMagnetPage && <Footer className="mt-auto"/>}
             </MessagesContextProvider>
         </div>
     )
